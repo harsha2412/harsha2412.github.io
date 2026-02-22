@@ -1,0 +1,117 @@
+{
+  "last_updated": "2026-02-22 00:00 UTC",
+  "author": "Harsha Gwalani",
+  "total_citations": 35,
+  "h_index": 4,
+  "i10_index": 1,
+  "publications": [
+    {
+      "title": "A Distributed Algorithm for Solving Large-Scale p-Median Problems Using Expectation Maximization",
+      "authors": "Harsha Gwalani, Armin R Mikler, Chetan Tiwari",
+      "year": "2024",
+      "venue": "PeerJ Computer Science",
+      "citations": 0,
+      "url": "",
+      "scholar_url": ""
+    },
+    {
+      "title": "Statistical Significance Testing for AUC for Large Scale Models",
+      "authors": "Harsha Gwalani",
+      "year": "2024",
+      "venue": "Submitted at CODE 2024",
+      "citations": 0,
+      "url": "",
+      "scholar_url": ""
+    },
+    {
+      "title": "Measuring the Impact of Suspending Umrah on the COVID-19 Pandemic",
+      "authors": "Sultanah M. Alshammari, Waleed K. Almutiry, Harsha Gwalani, Saeed M. Algarni, Kawther Saeedi",
+      "year": "2024",
+      "venue": "Computational and Mathematical Organization Theory",
+      "citations": 0,
+      "url": "",
+      "scholar_url": ""
+    },
+    {
+      "title": "Creating Contiguous Service Areas for Known Facilities with Constrained Demand Distribution",
+      "authors": "Harsha Gwalani, Armin R Mikler, Chetan Tiwari",
+      "year": "2022",
+      "venue": "GeoInformatica",
+      "citations": 0,
+      "url": "",
+      "scholar_url": ""
+    },
+    {
+      "title": "Evaluation of Heuristics for the P-Median Problem: Scale and Spatial Demand Distribution",
+      "authors": "Harsha Gwalani, Chetan Tiwari, Armin R Mikler",
+      "year": "2021",
+      "venue": "Computers, Environment and Urban Systems",
+      "citations": 0,
+      "url": "",
+      "scholar_url": ""
+    },
+    {
+      "title": "Compositional Analysis for Metallic Systems: Sampling Methods",
+      "authors": "Harsha Gwalani, Martin O'Neill II, Armin R Mikler, Talukder Alam, Rajarshi Banerjee",
+      "year": "2019",
+      "venue": "Industrial Conference on Data Mining (ICDM)",
+      "citations": 0,
+      "url": "",
+      "scholar_url": ""
+    },
+    {
+      "title": "Simulation of Solute Clusters in Metallic Systems",
+      "authors": "Harsha Gwalani, Bharat Gwalani, et al.",
+      "year": "2019",
+      "venue": "Modelling and Simulation in Materials Science and Engineering",
+      "citations": 0,
+      "url": "",
+      "scholar_url": ""
+    },
+    {
+      "title": "Validation and Evaluation of Emergency Response Plans through Agent-Based Modeling and Simulation",
+      "authors": "Joseph Helsing, Harsha Gwalani, et al.",
+      "year": "2019",
+      "venue": "Winter Simulation Conference (WSC)",
+      "citations": 0,
+      "url": "",
+      "scholar_url": ""
+    },
+    {
+      "title": "Disease Spread Simulation to Assess the Risk of Epidemics During the Global Mass Gathering of Hajj Pilgrimage",
+      "authors": "Sultanah Alshammari, Harsha Gwalani, et al.",
+      "year": "2019",
+      "venue": "Winter Simulation Conference (WSC)",
+      "citations": 0,
+      "url": "",
+      "scholar_url": ""
+    },
+    {
+      "title": "Modeling the 2013 Zika Outbreak in French Polynesia: Intervention Strategies",
+      "authors": "Harsha Gwalani, Faris Hawamdeh, Armin R Mikler, Katherine Xiong",
+      "year": "2018",
+      "venue": "Applied System Innovation",
+      "citations": 0,
+      "url": "",
+      "scholar_url": ""
+    },
+    {
+      "title": "Collection and Integration of Multi-spatial and Multi-type Data for Vulnerability Analysis in Emergency Response Plans",
+      "authors": "Harsha Gwalani, Armin R Mikler",
+      "year": "2016",
+      "venue": "Advances and New Trends in Environmental Informatics (Springer)",
+      "citations": 0,
+      "url": "",
+      "scholar_url": ""
+    },
+    {
+      "title": "Classification of Brain Tumors using Genetic Algorithms as a Feature Selection Method (GAFS)",
+      "authors": "Harsha Gwalani, Namita Mittal, Ankit Vidyarthi",
+      "year": "2016",
+      "venue": "ICIA 2016, Pondicherry, India",
+      "citations": 0,
+      "url": "",
+      "scholar_url": ""
+    }
+  ]
+}

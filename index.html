@@ -192,20 +192,11 @@ nav.scrolled{background:rgba(250,248,243,.92);backdrop-filter:blur(20px);box-sha
 </div></div></section>
 
 <section class="ps" id="publications"><div class="pi"><div class="sh fi-el"><span class="sn">03</span><h2 class="st">Publications</h2><div class="sl"></div></div>
-<div class="pl">
-<div class="pp fi-el"><div class="py">2024</div><div class="pc"><h3>A Distributed Algorithm for Solving Large-Scale p-Median Problems Using Expectation Maximization</h3><p class="pa"><strong>Harsha Gwalani</strong>, Armin R Mikler, Chetan Tiwari</p><span class="pv">PeerJ Computer Science, Sept 2024</span></div></div>
-<div class="pp fi-el"><div class="py">2024</div><div class="pc"><h3>Statistical Significance Testing for AUC for Large Scale Models</h3><p class="pa"><strong>Harsha Gwalani</strong></p><span class="pv">Submitted at CODE 2024</span></div></div>
-<div class="pp fi-el"><div class="py">2022</div><div class="pc"><h3>Creating Contiguous Service Areas for Known Facilities with Constrained Demand Distribution</h3><p class="pa"><strong>Harsha Gwalani</strong>, Armin R Mikler, Chetan Tiwari</p><span class="pv">GeoInformatica, Jan 2022</span></div></div>
-<div class="pp fi-el"><div class="py">2021</div><div class="pc"><h3>Evaluation of Heuristics for the P-Median Problem: Scale and Spatial Demand Distribution</h3><p class="pa"><strong>Harsha Gwalani</strong>, Chetan Tiwari, Armin R Mikler</p><span class="pv">Computers, Environment and Urban Systems, July 2021</span></div></div>
-<div class="pp fi-el"><div class="py">2019</div><div class="pc"><h3>Compositional Analysis for Metallic Systems: Sampling Methods</h3><p class="pa"><strong>Harsha Gwalani</strong>, Martin O'Neill II, Armin R Mikler, et al.</p><span class="pv">Industrial Conf. on Data Mining (ICDM), 2019</span></div></div>
-<div class="pp fi-el"><div class="py">2019</div><div class="pc"><h3>Simulation of Solute Clusters in Metallic Systems</h3><p class="pa"><strong>Harsha Gwalani</strong>, Bharat Gwalani, et al.</p><span class="pv">Modelling and Simulation in Materials Science, Sept 2019</span></div></div>
-<div class="pp fi-el"><div class="py">2019</div><div class="pc"><h3>Validation and Evaluation of Emergency Response Plans through Agent-Based Modeling</h3><p class="pa">Joseph Helsing, <strong>Harsha Gwalani</strong>, et al.</p><span class="pv">Winter Simulation Conference (WSC), 2019</span></div></div>
-<div class="pp fi-el"><div class="py">2019</div><div class="pc"><h3>Disease Spread Simulation to Assess the Risk of Epidemics During Hajj Pilgrimage</h3><p class="pa">Sultanah Alshammari, <strong>Harsha Gwalani</strong>, et al.</p><span class="pv">Winter Simulation Conference (WSC), 2019</span></div></div>
-<div class="pp fi-el"><div class="py">2018</div><div class="pc"><h3>Modeling the 2013 Zika Outbreak in French Polynesia: Intervention Strategies</h3><p class="pa"><strong>Harsha Gwalani</strong>, Faris Hawamdeh, Armin R Mikler, Katherine Xiong</p><span class="pv">Applied System Innovation, Aug 2018</span></div></div>
-<div class="pp fi-el"><div class="py">2016</div><div class="pc"><h3>Collection and Integration of Multi-spatial Data for Vulnerability Analysis in Emergency Response</h3><p class="pa"><strong>Harsha Gwalani</strong>, Armin R Mikler</p><span class="pv">Advances in Environmental Informatics (Springer), 2016</span></div></div>
-<div class="pp fi-el"><div class="py">2016</div><div class="pc"><h3>Classification of Brain Tumors using Genetic Algorithms as a Feature Selection Method</h3><p class="pa"><strong>Harsha Gwalani</strong>, Namita Mittal, Ankit Vidyarthi</p><span class="pv">ICIA 2016, Pondicherry, India</span></div></div>
+<div id="pub-stats" class="fi-el" style="display:flex;gap:2rem;margin-bottom:2rem;font-family:'Source Code Pro',monospace;font-size:.85rem;color:var(--mo)"></div>
+<div class="pl" id="pub-list">
+<div class="pp fi-el" style="text-align:center;grid-template-columns:1fr"><div class="pc" style="color:var(--mo)">Loading publications from Google Scholar...</div></div>
 </div>
-<p class="pn fi-el">Full list and citations on <a href="https://scholar.google.com/citations?user=Pdd1FaEAAAAJ" target="_blank">Google Scholar</a></p>
+<p class="pn fi-el"><span id="pub-updated"></span> Full list and citations on <a href="https://scholar.google.com/citations?user=Pdd1FaEAAAAJ" target="_blank">Google Scholar</a></p>
 </div></section>
 
 <section class="es" id="experience"><div class="sh fi-el"><span class="sn">04</span><h2 class="st">Experience</h2><div class="sl"></div></div>
@@ -248,6 +239,50 @@ const n=document.getElementById('nb');window.addEventListener('scroll',()=>n.cla
 const o=new IntersectionObserver(e=>{e.forEach((x,i)=>{if(x.isIntersecting){setTimeout(()=>x.target.classList.add('visible'),i*80);o.unobserve(x.target)}})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
 document.querySelectorAll('.fi-el').forEach(e=>o.observe(e));
 document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'})})});
+
+// Load publications from publications.json
+function highlightAuthor(authors){
+  return authors.replace(/(Harsha Gwalani)/gi,'<strong>$1</strong>');
+}
+
+fetch('publications.json')
+  .then(r=>r.json())
+  .then(data=>{
+    // Render stats
+    const stats=document.getElementById('pub-stats');
+    if(data.total_citations||data.h_index){
+      stats.innerHTML=`
+        <span>Citations: <strong style="color:var(--dg)">${data.total_citations}</strong></span>
+        <span>h-index: <strong style="color:var(--dg)">${data.h_index}</strong></span>
+        <span>i10-index: <strong style="color:var(--dg)">${data.i10_index}</strong></span>
+      `;
+    }
+
+    // Render publications
+    const list=document.getElementById('pub-list');
+    list.innerHTML=data.publications.map(p=>{
+      const titleHtml=p.url
+        ?`<a href="${p.url}" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(61,107,78,.2)">${p.title}</a>`
+        :p.title;
+      const citeBadge=p.citations>0
+        ?`<span style="font-family:'Source Code Pro',monospace;font-size:.72rem;color:var(--mo);background:rgba(0,255,136,.08);padding:.15rem .5rem;border-radius:3px;margin-left:.5rem">${p.citations} cited</span>`
+        :'';
+      return `<div class="pp fi-el"><div class="py">${p.year||'—'}</div><div class="pc"><h3>${titleHtml}${citeBadge}</h3><p class="pa">${highlightAuthor(p.authors)}</p>${p.venue?`<span class="pv">${p.venue}</span>`:''}</div></div>`;
+    }).join('');
+
+    // Update timestamp
+    const updated=document.getElementById('pub-updated');
+    if(data.last_updated){
+      updated.textContent=`Last synced: ${data.last_updated}. `;
+    }
+
+    // Re-observe new elements for scroll animation
+    list.querySelectorAll('.fi-el').forEach(e=>o.observe(e));
+  })
+  .catch(err=>{
+    console.warn('Could not load publications.json:',err);
+    document.getElementById('pub-list').innerHTML='<div class="pp" style="grid-template-columns:1fr;text-align:center"><div class="pc" style="color:var(--mo)">Publications will appear here once data syncs. Visit <a href="https://scholar.google.com/citations?user=Pdd1FaEAAAAJ">Google Scholar</a> in the meantime.</div></div>';
+  });
 </script>
 </body>
 </html>
