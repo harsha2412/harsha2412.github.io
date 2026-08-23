@@ -4,285 +4,736 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Harsha Gwalani Helsing</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Code+Pro:wght@300;400;600&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--dg:#0a2e1a;--fo:#1a4a2e;--mo:#3d6b4e;--sa:#7fa88b;--cr:#f0ede4;--ww:#faf8f3;--tg:#00ff88;--ct:#00c9a7;--so:#3e2723}
-*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;background:var(--ww);color:var(--dg);overflow-x:hidden}
-nav{position:fixed;top:0;width:100%;z-index:1000;padding:1.2rem 3rem;display:flex;justify-content:space-between;align-items:center;transition:all .4s;background:transparent}
-nav.scrolled{background:rgba(250,248,243,.92);backdrop-filter:blur(20px);box-shadow:0 1px 30px rgba(10,46,26,.08)}
-.nl{font-family:'Source Code Pro',monospace;font-weight:600;font-size:1.1rem}.nl span{color:var(--tg);text-shadow:0 0 10px rgba(0,255,136,.3)}
-.nk{display:flex;gap:2.5rem;list-style:none}
-.nk a{text-decoration:none;color:var(--dg);font-size:.9rem;font-weight:500;letter-spacing:.5px;position:relative;transition:color .3s}
-.nk a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--tg);transition:width .3s}.nk a:hover::after{width:100%}
-.mt{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:5px}.mt span{width:24px;height:2px;background:var(--dg)}
-.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(165deg,var(--ww) 0%,#e8f0e8 40%,#d4e8d8 100%)}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 80%,rgba(0,255,136,.05) 0%,transparent 50%),radial-gradient(circle at 80% 20%,rgba(0,201,167,.05) 0%,transparent 50%);pointer-events:none}
-.hc{max-width:1200px;margin:0 auto;padding:0 4rem;display:grid;grid-template-columns:1.2fr 1fr;gap:4rem;align-items:center;z-index:2;position:relative}
-.ht{animation:fu 1s ease-out}
-@keyframes fu{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
-.hg{font-family:'Source Code Pro',monospace;font-size:.9rem;color:var(--mo);margin-bottom:1rem;letter-spacing:1px}
-.hg .cur{display:inline-block;width:8px;height:16px;background:var(--tg);margin-left:4px;animation:bl 1s step-end infinite;vertical-align:text-bottom}
-@keyframes bl{0%,100%{opacity:1}50%{opacity:0}}
-.hn{font-family:'Playfair Display',serif;font-size:4.2rem;font-weight:700;line-height:1.05;margin-bottom:1.5rem;background:linear-gradient(135deg,var(--dg),var(--fo),var(--mo));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hti{font-size:1.25rem;color:var(--mo);font-weight:300;line-height:1.6;margin-bottom:2rem;max-width:520px}.hti strong{color:var(--dg);font-weight:500}
-.hl{display:flex;gap:1rem;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.8rem;border-radius:50px;text-decoration:none;font-size:.9rem;font-weight:500;transition:all .3s;letter-spacing:.3px}
-.bp{background:var(--dg);color:var(--cr);border:2px solid var(--dg)}.bp:hover{background:var(--fo);border-color:var(--fo);transform:translateY(-2px);box-shadow:0 8px 25px rgba(10,46,26,.25)}
-.bs{background:transparent;color:var(--dg);border:2px solid var(--mo)}.bs:hover{border-color:var(--dg);background:rgba(10,46,26,.05);transform:translateY(-2px)}
-.hv{display:flex;justify-content:center;align-items:center;animation:fu 1s ease-out .3s both}
-.mc{width:440px;height:460px}.mc svg{width:100%;height:100%}
-.sec{padding:6rem 4rem;max-width:1200px;margin:0 auto}
-.sh{display:flex;align-items:center;gap:1rem;margin-bottom:3rem}
-.sn{font-family:'Source Code Pro',monospace;font-size:.85rem;color:var(--tg);background:var(--dg);padding:.3rem .8rem;border-radius:4px}
-.st{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:700;color:var(--dg)}
-.sl{flex:1;height:1px;background:linear-gradient(to right,var(--sa),transparent)}
-.ag{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
-.at{font-size:1.05rem;line-height:1.8;color:var(--so)}.at p{margin-bottom:1.2rem}
-.ah{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
-.hcd{background:linear-gradient(135deg,rgba(61,107,78,.06),rgba(0,255,136,.03));border:1px solid rgba(61,107,78,.12);border-radius:16px;padding:1.5rem;transition:all .3s;position:relative;overflow:hidden}
-.hcd::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--tg);opacity:0;transition:opacity .3s}
-.hcd:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(10,46,26,.1)}.hcd:hover::before{opacity:1}
-.monstera-icon{width:28px;height:28px;display:inline-block;margin-bottom:.8rem}
-.monstera-icon svg{width:100%;height:100%}
-.rci .monstera-icon{width:24px;height:24px;margin-bottom:0}
-.acii .monstera-icon{width:22px;height:22px}
-.hi{font-size:1.8rem;margin-bottom:.8rem}
-.hlb{font-family:'Source Code Pro',monospace;font-size:.75rem;color:var(--mo);text-transform:uppercase;letter-spacing:1px;margin-bottom:.3rem}
-.hvl{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--dg);font-weight:700}
-.ss{margin-top:2rem}.ssl{font-family:'Source Code Pro',monospace;font-size:.8rem;color:var(--mo);text-transform:uppercase;letter-spacing:1px;margin-bottom:.8rem}
-.stg{display:flex;flex-wrap:wrap;gap:.5rem}
-.stgi{font-family:'Source Code Pro',monospace;font-size:.75rem;padding:.35rem .75rem;border-radius:20px;background:rgba(10,46,26,.06);color:var(--fo);border:1px solid rgba(10,46,26,.1);transition:all .2s}
-.stgi:hover{background:var(--dg);color:var(--tg)}
-.rs{background:var(--dg);padding:6rem 4rem;position:relative;overflow:hidden}
-.rs::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 10% 90%,rgba(0,255,136,.08) 0%,transparent 50%),radial-gradient(ellipse at 90% 10%,rgba(0,201,167,.06) 0%,transparent 50%);pointer-events:none}
-.rs::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(0,255,136,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,136,.03) 1px,transparent 1px);background-size:40px 40px;pointer-events:none}
-.ri{max-width:1200px;margin:0 auto;position:relative;z-index:2}
-.rs .st{color:var(--cr)}.rs .sl{background:linear-gradient(to right,var(--mo),transparent)}
-.rg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}
-.rc{background:rgba(255,255,255,.04);border:1px solid rgba(0,255,136,.1);border-radius:20px;padding:2rem;transition:all .4s;position:relative;overflow:hidden}
-.rc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--tg),var(--ct));transform:scaleX(0);transition:transform .4s}
-.rc:hover{background:rgba(255,255,255,.08);transform:translateY(-5px);box-shadow:0 20px 40px rgba(0,0,0,.2)}.rc:hover::after{transform:scaleX(1)}
-.rci{width:50px;height:50px;border-radius:12px;background:rgba(0,255,136,.1);display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem;font-size:1.4rem}
-.rc h3{font-family:'Playfair Display',serif;color:var(--cr);font-size:1.2rem;margin-bottom:.8rem}
-.rc p{color:var(--sa);font-size:.9rem;line-height:1.6}
-.ps{padding:6rem 4rem;background:linear-gradient(180deg,var(--ww),#f5f2ea)}
-.pi{max-width:1200px;margin:0 auto}.pl{display:flex;flex-direction:column;gap:1.2rem}
-.pp{background:#fff;border-radius:16px;padding:1.8rem 2rem;border:1px solid rgba(61,107,78,.08);transition:all .3s;display:grid;grid-template-columns:55px 1fr;gap:1.5rem;align-items:start}
-.pp:hover{border-color:rgba(0,255,136,.2);box-shadow:0 8px 30px rgba(10,46,26,.08);transform:translateX(4px)}
-.py{font-family:'Source Code Pro',monospace;font-size:.8rem;color:var(--mo);writing-mode:vertical-rl;text-orientation:mixed;transform:rotate(180deg);letter-spacing:1px;padding-top:.3rem}
-.pc h3{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--dg);margin-bottom:.5rem;line-height:1.4}
-.pa{font-size:.88rem;color:var(--mo);margin-bottom:.4rem;line-height:1.5}.pa strong{color:var(--dg);font-weight:600}
-.pv{font-family:'Source Code Pro',monospace;font-size:.78rem;color:var(--sa);background:rgba(61,107,78,.06);display:inline-block;padding:.2rem .6rem;border-radius:4px}
-.pn{text-align:center;margin-top:2rem;font-family:'Source Code Pro',monospace;font-size:.85rem;color:var(--mo)}.pn a{color:var(--fo);text-decoration:underline;text-underline-offset:3px}
-.es{padding:6rem 4rem;max-width:1200px;margin:0 auto}
-.tl{position:relative;padding-left:3rem}
-.tl::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--tg),var(--sa),transparent)}
-.ti{position:relative;margin-bottom:3rem;padding-left:2rem}
-.ti::before{content:'';position:absolute;left:-3.55rem;top:.5rem;width:12px;height:12px;border-radius:50%;background:var(--tg);border:3px solid var(--ww);box-shadow:0 0 0 2px var(--tg)}
-.td{font-family:'Source Code Pro',monospace;font-size:.8rem;color:var(--mo);margin-bottom:.3rem}
-.tr{font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--dg);margin-bottom:.2rem}
-.to{font-size:1rem;color:var(--fo);font-weight:500;margin-bottom:.6rem}
-.tde{font-size:.95rem;color:var(--so);line-height:1.7;max-width:600px}
-.tt{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.6rem}
-.tti{font-family:'Source Code Pro',monospace;font-size:.7rem;padding:.2rem .5rem;border-radius:3px;background:rgba(0,255,136,.08);color:var(--mo);border:1px solid rgba(0,255,136,.15)}
-.acg{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem}
-.aci{display:flex;align-items:flex-start;gap:1rem;padding:1.2rem 1.5rem;background:linear-gradient(135deg,rgba(61,107,78,.04),rgba(0,255,136,.02));border:1px solid rgba(61,107,78,.08);border-radius:12px;transition:all .3s}
-.aci:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(10,46,26,.06)}
-.acii{font-size:1.4rem;flex-shrink:0;margin-top:2px}
-.acit{font-size:.92rem;color:var(--so);line-height:1.5}.acit strong{color:var(--dg)}
-.fs{background:var(--dg);padding:5rem 4rem 3rem;position:relative;overflow:hidden}
-.fs::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(0,255,136,.06),transparent 60%);pointer-events:none}
-.fi{max-width:1200px;margin:0 auto;text-align:center;position:relative;z-index:2}
-.fc{font-family:'Playfair Display',serif;font-size:2.8rem;color:var(--cr);margin-bottom:1rem}
-.fsu{color:var(--sa);font-size:1.05rem;margin-bottom:2.5rem;line-height:1.6}
-.fls{display:flex;justify-content:center;gap:1.5rem;margin-bottom:4rem;flex-wrap:wrap}
-.fl{display:inline-flex;align-items:center;gap:.5rem;color:var(--sa);text-decoration:none;font-size:.95rem;padding:.6rem 1.2rem;border:1px solid rgba(127,168,139,.3);border-radius:50px;transition:all .3s}
-.fl:hover{color:var(--tg);border-color:var(--tg);background:rgba(0,255,136,.05)}
-.fb{border-top:1px solid rgba(127,168,139,.15);padding-top:2rem;display:flex;justify-content:space-between;align-items:center}
-.fco{font-family:'Source Code Pro',monospace;font-size:.78rem;color:var(--mo)}
-.fm{font-size:.8rem;color:var(--mo)}.fm span{color:var(--tg)}
-.fi-el{opacity:0;transform:translateY(30px);transition:all .8s ease-out}.fi-el.visible{opacity:1;transform:translateY(0)}
-::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:var(--ww)}::-webkit-scrollbar-thumb{background:var(--sa);border-radius:4px}
-.lb{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--tg),var(--ct));z-index:9999;animation:lba 1.5s ease-out forwards}
-@keyframes lba{0%{width:0}100%{width:100%;opacity:0}}
-@media(max-width:900px){
-.hc{grid-template-columns:1fr;padding:0 2rem;text-align:center}.hn{font-size:2.8rem}.hti{margin:0 auto 2rem}.hl{justify-content:center}.hv{display:none}
-.sec,.es{padding:4rem 2rem}.ag,.rg,.acg{grid-template-columns:1fr}.rs,.ps,.fs{padding:4rem 2rem}
-.pp{grid-template-columns:1fr;gap:.5rem}.py{writing-mode:horizontal-tb;transform:none}
-.nk{display:none}.mt{display:flex}.fb{flex-direction:column;gap:1rem;text-align:center}.st{font-size:2rem}
+:root {
+  --term-bg: #000000;
+  --term-fg: #c8e6c9;
+  --term-dim: #5a8a6a;
+  --term-bright: #e0f2e0;
+  --tg: #00ff88;
+  --ct: #00c9a7;
+  --term-border: #1a1a1a;
+  --term-header: #0a0a0a;
+  --term-error: #ff6b6b;
+  --term-purple: #b39ddb;
+  --term-yellow: #ffd54f;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; overflow: hidden; background: #000000; font-family: 'Source Code Pro', monospace; }
+#terminal-container {
+  display: flex; flex-direction: column; height: 100vh;
+  max-width: 1100px; margin: 1.5rem auto; border-radius: 12px;
+  border: 1px solid var(--term-border); overflow: hidden;
+  box-shadow: 0 0 60px rgba(0, 255, 136, 0.06), 0 20px 60px rgba(0,0,0,0.5);
+  background: var(--term-bg);
+}
+#terminal-header {
+  background: var(--term-header); padding: 0.75rem 1.2rem;
+  display: flex; align-items: center; gap: 0.6rem;
+  border-bottom: 1px solid var(--term-border); flex-shrink: 0;
+}
+.dot { width: 12px; height: 12px; border-radius: 50%; }
+.dot-r { background: #ff5f56; } .dot-y { background: #ffbd2e; } .dot-g { background: #27c93f; }
+.header-title {
+  flex: 1; text-align: center; font-size: 0.8rem; color: var(--term-dim);
+  letter-spacing: 0.5px;
+}
+#terminal-output {
+  flex: 1; overflow-y: auto; padding: 1.5rem 2rem; color: var(--term-fg);
+  font-size: 0.88rem; line-height: 1.7; scroll-behavior: smooth;
+}
+#terminal-output::-webkit-scrollbar { width: 6px; }
+#terminal-output::-webkit-scrollbar-track { background: transparent; }
+#terminal-output::-webkit-scrollbar-thumb { background: var(--term-border); border-radius: 3px; }
+#terminal-input-line {
+  display: flex; align-items: center; padding: 0.8rem 2rem;
+  border-top: 1px solid var(--term-border); background: var(--term-header); flex-shrink: 0;
+}
+.prompt { color: var(--tg); font-size: 0.85rem; margin-right: 0.6rem; white-space: nowrap; }
+#cmd-input {
+  flex: 1; background: transparent; border: none; outline: none;
+  color: var(--term-bright); font-family: 'Source Code Pro', monospace;
+  font-size: 0.88rem; caret-color: var(--tg);
+}
+.cmd-palette {
+  display: none; padding: 0.6rem 1rem; gap: 0.5rem;
+  overflow-x: auto; border-top: 1px solid var(--term-border);
+  background: var(--term-header); flex-shrink: 0;
+}
+.cmd-pill {
+  padding: 0.4rem 0.9rem; border-radius: 20px; border: 1px solid var(--term-border);
+  background: rgba(0,255,136,0.05); color: var(--term-dim); font-size: 0.75rem;
+  font-family: 'Source Code Pro', monospace; cursor: pointer; white-space: nowrap;
+  transition: all 0.2s;
+}
+.cmd-pill:hover, .cmd-pill:active { border-color: var(--tg); color: var(--tg); background: rgba(0,255,136,0.1); }
+
+/* Output styling */
+.cmd-echo { color: var(--term-dim); margin-bottom: 0.3rem; }
+.cmd-echo .prompt { color: var(--tg); }
+.cmd-heading { color: var(--tg); font-weight: 600; margin: 1rem 0 0.5rem; font-size: 0.9rem; }
+.cmd-subheading { color: var(--ct); margin: 0.8rem 0 0.3rem; }
+.cmd-body { color: var(--term-fg); margin-bottom: 0.4rem; max-width: 72ch; }
+.cmd-dim { color: var(--term-dim); }
+.cmd-error { color: var(--term-error); margin-bottom: 0.5rem; }
+.cmd-link { color: var(--ct); text-decoration: none; border-bottom: 1px solid rgba(0,201,167,0.3); transition: border-color 0.2s; }
+.cmd-link:hover { border-color: var(--ct); }
+.cmd-tag { display: inline-block; padding: 0.15rem 0.5rem; margin: 0.15rem 0.2rem; border-radius: 3px; font-size: 0.75rem; background: rgba(0,255,136,0.08); color: var(--term-dim); border: 1px solid rgba(0,255,136,0.12); }
+.cmd-section { margin-bottom: 1.5rem; }
+.cmd-divider { border: none; border-top: 1px solid var(--term-border); margin: 1rem 0; }
+.cmd-table-row { display: grid; grid-template-columns: 120px 1fr; gap: 1rem; margin-bottom: 0.8rem; align-items: start; }
+.cmd-table-label { color: var(--term-dim); }
+.cmd-table-value { color: var(--term-fg); }
+.cmd-indent { padding-left: 2rem; }
+.pub-entry { margin-bottom: 1rem; padding-left: 1rem; border-left: 2px solid var(--term-border); }
+.pub-entry:hover { border-color: var(--tg); }
+.pub-title { color: var(--term-bright); }
+.pub-authors { color: var(--term-dim); font-size: 0.82rem; }
+.pub-authors strong { color: var(--tg); font-weight: 500; }
+.pub-venue { color: var(--term-purple); font-size: 0.78rem; }
+.pub-cite { color: var(--term-yellow); font-size: 0.75rem; }
+.exp-block { margin-bottom: 1.2rem; padding-left: 1rem; border-left: 2px solid var(--term-border); }
+.exp-block:hover { border-color: var(--ct); }
+.exp-date { color: var(--term-dim); font-size: 0.8rem; }
+.exp-role { color: var(--term-bright); font-weight: 500; }
+.exp-org { color: var(--ct); font-size: 0.85rem; }
+.exp-desc { color: var(--term-fg); font-size: 0.85rem; margin-top: 0.3rem; }
+.welcome-art { margin: 0.5rem 0 1rem; }
+.help-cmd { display: grid; grid-template-columns: 140px 1fr; margin-bottom: 0.2rem; }
+.help-cmd-name { color: var(--tg); }
+.help-cmd-desc { color: var(--term-dim); }
+.cmd-clickable { color: var(--ct); cursor: pointer; border-bottom: 1px dashed rgba(0,201,167,0.3); transition: color 0.2s; }
+.cmd-clickable:hover { color: var(--tg); border-bottom-color: var(--tg); }
+
+/* Plant decorations */
+.plant-decor {
+  position: fixed; pointer-events: none; z-index: 0; opacity: 0.12;
+}
+.plant-decor-bl { bottom: -20px; left: -20px; width: 200px; height: 200px; }
+.plant-decor-tr { top: -10px; right: -10px; width: 150px; height: 150px; }
+
+@media (max-width: 768px) {
+  #terminal-container { margin: 0; border-radius: 0; border: none; height: 100vh; }
+  #terminal-header { display: none; }
+  #terminal-output { padding: 1rem; font-size: 0.82rem; }
+  #terminal-input-line { padding: 0.7rem 1rem; }
+  #cmd-input { font-size: 16px; }
+  .cmd-palette { display: flex; }
+  .plant-decor { display: none; }
+  .cmd-table-row { grid-template-columns: 1fr; gap: 0.2rem; }
+  .welcome-art svg { max-width: 280px; }
 }
 </style>
 </head>
 <body>
-<div class="lb"></div>
-<nav id="nb"><div class="nl">&gt; harsha<span>_</span>helsing</div><ul class="nk"><li><a href="#about">About</a></li><li><a href="#research">Research</a></li><li><a href="#publications">Publications</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li></ul><button class="mt" onclick="document.querySelector('.nk').style.display=document.querySelector('.nk').style.display==='flex'?'none':'flex'"><span></span><span></span><span></span></button></nav>
 
-<section class="hero"><div class="hc"><div class="ht">
-<p class="hg">// hello, world<span class="cur"></span></p>
-<h1 class="hn">Harsha Gwalani Helsing</h1>
-<p class="hti"><strong>Data Science Manager at Apple</strong> — leading experimentation science for Apple Ads, with roots in computational epidemiology and a passion for causal inference.</p>
-<div class="hl">
-<a href="https://www.linkedin.com/in/harsha-helsing-7b348847/" class="btn bp" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.064 2.064 0 1 1 0-4.128 2.064 2.064 0 0 1 0 4.128zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
-<a href="https://scholar.google.com/citations?user=Pdd1FaEAAAAJ" class="btn bs" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>Scholar</a>
-<a href="https://github.com/harsha2412" class="btn bs" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.95 11.95 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>GitHub</a>
-</div></div>
-<div class="hv"><div class="mc"><svg viewBox="0 0 440 460" fill="none">
-<path d="M160 370L165 410L275 410L280 370Z" fill="#3e2723" opacity=".85"/><path d="M148 360L292 360L285 375L155 375Z" fill="#5d4037" opacity=".85"/><rect x="175" y="408" width="90" height="8" rx="4" fill="#3e2723" opacity=".4"/>
-<path d="M220 360C220 320 218 280 215 250C212 220 208 190 210 160" stroke="#1a4a2e" stroke-width="5" fill="none" stroke-linecap="round"/>
-<path d="M222 350L222 310L218 310L218 270L222 270L222 240" stroke="#00ff88" stroke-width="1.5" opacity=".35" stroke-dasharray="6 4"><animate attributeName="stroke-dashoffset" from="0" to="-20" dur="3s" repeatCount="indefinite"/></path>
-<path d="M200 160C170 130 120 100 80 80C60 72 40 80 35 100C30 125 45 155 70 175C90 190 110 195 130 200C150 205 175 200 200 190C205 185 205 175 200 160Z" fill="#3d6b4e" opacity=".75"/>
-<ellipse cx="100" cy="120" rx="12" ry="18" fill="#faf8f3" opacity=".85" transform="rotate(-20 100 120)"/><ellipse cx="130" cy="145" rx="8" ry="14" fill="#faf8f3" opacity=".85" transform="rotate(-10 130 145)"/><ellipse cx="80" cy="155" rx="10" ry="8" fill="#faf8f3" opacity=".85" transform="rotate(15 80 155)"/>
-<path d="M200 160C170 135 120 108 55 88" stroke="#1a4a2e" stroke-width="2" fill="none" opacity=".6"/><path d="M170 140C155 130 135 120 115 115" stroke="#1a4a2e" stroke-width="1" fill="none" opacity=".35"/><path d="M155 155C135 152 110 155 90 165" stroke="#1a4a2e" stroke-width="1" fill="none" opacity=".35"/>
-<circle cx="75" cy="100" r="4" fill="#00ff88" opacity=".4"><animate attributeName="opacity" values=".2;.7;.2" dur="3s" repeatCount="indefinite"/></circle>
-<circle cx="120" cy="130" r="3.5" fill="#4ecdc4" opacity=".35"><animate attributeName="opacity" values=".15;.6;.15" dur="2.5s" repeatCount="indefinite" begin=".5s"/></circle>
-<circle cx="150" cy="165" r="3" fill="#00ff88" opacity=".3"><animate attributeName="opacity" values=".2;.5;.2" dur="4s" repeatCount="indefinite" begin="1s"/></circle>
-<circle cx="95" cy="175" r="3.5" fill="#4ecdc4" opacity=".3"><animate attributeName="opacity" values=".15;.55;.15" dur="3.5s" repeatCount="indefinite" begin=".3s"/></circle>
-<path d="M75 100L120 130" stroke="#00ff88" stroke-width=".8" opacity=".2" stroke-dasharray="3 3"><animate attributeName="opacity" values=".1;.4;.1" dur="2s" repeatCount="indefinite"/></path>
-<path d="M120 130L150 165" stroke="#4ecdc4" stroke-width=".8" opacity=".2" stroke-dasharray="3 3"><animate attributeName="opacity" values=".1;.4;.1" dur="2.5s" repeatCount="indefinite" begin=".3s"/></path>
-<path d="M120 130L95 175" stroke="#00ff88" stroke-width=".8" opacity=".2" stroke-dasharray="3 3"><animate attributeName="opacity" values=".1;.35;.1" dur="3s" repeatCount="indefinite" begin=".6s"/></path>
-<path d="M75 100L150 165" stroke="#4ecdc4" stroke-width=".6" opacity=".12" stroke-dasharray="2 4"><animate attributeName="opacity" values=".06;.25;.06" dur="4s" repeatCount="indefinite" begin="1s"/></path>
-<path d="M230 145C260 110 305 75 345 60C370 50 390 60 393 82C395 110 380 140 355 160C335 175 310 182 285 185C263 188 243 180 230 170C227 162 227 152 230 145Z" fill="#7fa88b" opacity=".65"/>
-<ellipse cx="325" cy="100" rx="14" ry="16" fill="#faf8f3" opacity=".85" transform="rotate(25 325 100)"/><ellipse cx="290" cy="130" rx="9" ry="13" fill="#faf8f3" opacity=".85" transform="rotate(10 290 130)"/><ellipse cx="350" cy="138" rx="8" ry="10" fill="#faf8f3" opacity=".85" transform="rotate(-15 350 138)"/>
-<path d="M230 145C265 115 315 85 380 72" stroke="#3d6b4e" stroke-width="1.8" fill="none" opacity=".5"/>
-<circle cx="355" cy="85" r="3.5" fill="#4ecdc4" opacity=".35"><animate attributeName="opacity" values=".2;.6;.2" dur="2.8s" repeatCount="indefinite" begin=".2s"/></circle>
-<circle cx="305" cy="110" r="3" fill="#00ff88" opacity=".3"><animate attributeName="opacity" values=".15;.55;.15" dur="3.2s" repeatCount="indefinite" begin=".7s"/></circle>
-<circle cx="270" cy="140" r="4" fill="#4ecdc4" opacity=".4"><animate attributeName="opacity" values=".2;.65;.2" dur="2.5s" repeatCount="indefinite"/></circle>
-<path d="M355 85L305 110" stroke="#4ecdc4" stroke-width=".8" opacity=".2" stroke-dasharray="3 3"><animate attributeName="opacity" values=".1;.4;.1" dur="2.3s" repeatCount="indefinite" begin=".2s"/></path>
-<path d="M305 110L270 140" stroke="#00ff88" stroke-width=".8" opacity=".2" stroke-dasharray="3 3"><animate attributeName="opacity" values=".1;.35;.1" dur="2.8s" repeatCount="indefinite" begin=".5s"/></path>
-<path d="M210 160C205 120 195 75 180 40C172 20 178 5 195 2C215 0 228 15 230 40C232 60 225 100 215 145" fill="#3d6b4e" opacity=".8"/>
-<ellipse cx="205" cy="60" rx="8" ry="12" fill="#faf8f3" opacity=".8" transform="rotate(-5 205 60)"/><ellipse cx="215" cy="100" rx="6" ry="10" fill="#faf8f3" opacity=".8"/>
-<path d="M210 160C207 120 198 65 188 25" stroke="#1a4a2e" stroke-width="1.5" fill="none" opacity=".5"/>
-<circle cx="195" cy="35" r="3" fill="#00ff88" opacity=".3"><animate attributeName="opacity" values=".15;.5;.15" dur="3s" repeatCount="indefinite" begin=".3s"/></circle>
-<circle cx="210" cy="85" r="2.5" fill="#4ecdc4" opacity=".25"><animate attributeName="opacity" values=".1;.45;.1" dur="2.5s" repeatCount="indefinite" begin=".8s"/></circle>
-<path d="M195 35L210 85" stroke="#00ff88" stroke-width=".6" opacity=".15" stroke-dasharray="2 4"><animate attributeName="opacity" values=".08;.3;.08" dur="3s" repeatCount="indefinite" begin=".5s"/></path>
-<path d="M200 260C175 245 140 235 115 245C100 252 100 268 110 280C125 295 155 295 180 285C195 278 205 268 200 260Z" fill="#b8d8c0" opacity=".5"/><ellipse cx="145" cy="265" rx="8" ry="6" fill="#faf8f3" opacity=".7"/>
-<path d="M230 280C255 265 290 260 310 272C325 282 322 300 310 310C295 322 265 318 245 305C232 296 228 288 230 280Z" fill="#7fa88b" opacity=".45"/>
-<circle cx="170" cy="200" r="2" fill="#00ff88" opacity=".2"><animate attributeName="cy" values="200;188;200" dur="4s" repeatCount="indefinite"/></circle>
-<circle cx="280" cy="210" r="1.5" fill="#4ecdc4" opacity=".18"><animate attributeName="cy" values="210;198;210" dur="5s" repeatCount="indefinite"/></circle>
-<text x="40" y="330" font-family="monospace" font-size="7" fill="#1a4a2e" opacity=".1">p_value &lt; 0.05</text>
-<text x="290" y="320" font-family="monospace" font-size="7" fill="#1a4a2e" opacity=".1">causal_effect()</text>
-<text x="55" y="50" font-family="monospace" font-size="7" fill="#1a4a2e" opacity=".08">import numpy</text>
-<text x="320" y="42" font-family="monospace" font-size="7" fill="#1a4a2e" opacity=".08">ATE=E[Y1-Y0]</text>
-</svg></div></div></div></section>
-
-<section class="sec" id="about"><div class="sh fi-el"><span class="sn">01</span><h2 class="st">About</h2><div class="sl"></div></div>
-<div class="ag"><div class="at fi-el">
-<p>I am a Data Science Manager at <strong>Apple</strong>, where I lead the experimentation science team for Apple Ads. My team develops experiment designs, metrics, and statistical analyses to measure the impact of new algorithms and features on business metrics. My professional work centers on <strong>online experimentation and causal inference</strong> — establishing causality through both randomized experiments and observational data.</p>
-<p>My interest in applying quantitative methods to societal challenges was shaped early — growing up in India with a father who is a practicing Physician, I was introduced to medicine and biology early on and was always interested in Math. This led me to a computer science research lab focused on bioinformatics and public health. Under <strong>Dr. Armin Mikler</strong> and <strong>Dr. Chetan Tiwari</strong> at the University of North Texas, my doctoral research focused on location-allocation algorithms for emergency response planning, disease modeling, and computational epidemiology.</p>
-<p>Before Apple, I was a Senior Data Scientist at <strong>Twitter</strong>, working on experimentation, customer retention modeling, and variance reduction methods for A/B testing.</p>
-<div class="ss"><div class="ssl">Tech Stack</div><div class="stg">
-<span class="stgi">Python</span><span class="stgi">PySpark</span><span class="stgi">BigQuery</span><span class="stgi">Presto</span><span class="stgi">SQL</span><span class="stgi">Java</span><span class="stgi">C++</span><span class="stgi">Plotly-Dash</span><span class="stgi">QGIS</span><span class="stgi">PostgreSQL</span><span class="stgi">Redis</span><span class="stgi">Vue.js</span>
-</div></div></div>
-<div class="ah fi-el">
-<div class="hcd"><div class="hi"><svg width="28" height="28" viewBox="0 0 32 32" fill="none"><path d="M16 28C16 22 14 18 12 15C10 12 7 10 4 10C3 10 2 11 2 12.5C2 15 4 18 7 20C9 21.5 11 22 13 22.5C14.5 23 16 23 16 25Z" fill="#3d6b4e" opacity=".8"/><ellipse cx="8" cy="14" rx="2" ry="3" fill="#faf8f3" opacity=".8" transform="rotate(-15 8 14)"/><path d="M16 28C16 22 18 18 20 15C22 12 25 10 28 10C29 10 30 11 30 12.5C30 15 28 18 25 20C23 21.5 21 22 19 22.5C17.5 23 16 23 16 25Z" fill="#7fa88b" opacity=".7"/><ellipse cx="24" cy="14" rx="2" ry="3" fill="#faf8f3" opacity=".8" transform="rotate(15 24 14)"/><circle cx="9" cy="17" r="1.2" fill="#00ff88" opacity=".5"/><circle cx="23" cy="17" r="1.2" fill="#4ecdc4" opacity=".5"/><path d="M9 17L16 22L23 17" stroke="#00ff88" stroke-width=".5" opacity=".3" stroke-dasharray="2 2"/></svg></div><div class="hlb">Focus</div><div class="hvl">Experimentation & Causal Inference</div></div>
-<div class="hcd"><div class="hi"><svg width="28" height="28" viewBox="0 0 32 32" fill="none"><path d="M16 28C16 22 14 18 12 15C10 12 7 10 4 10C3 10 2 11 2 12.5C2 15 4 18 7 20C9 21.5 11 22 13 22.5C14.5 23 16 23 16 25Z" fill="#3d6b4e" opacity=".8"/><ellipse cx="8" cy="14" rx="2" ry="3" fill="#faf8f3" opacity=".8" transform="rotate(-15 8 14)"/><path d="M16 28C16 22 18 18 20 15C22 12 25 10 28 10C29 10 30 11 30 12.5C30 15 28 18 25 20C23 21.5 21 22 19 22.5C17.5 23 16 23 16 25Z" fill="#7fa88b" opacity=".7"/><ellipse cx="24" cy="14" rx="2" ry="3" fill="#faf8f3" opacity=".8" transform="rotate(15 24 14)"/><circle cx="9" cy="17" r="1.2" fill="#00ff88" opacity=".5"/><circle cx="23" cy="17" r="1.2" fill="#4ecdc4" opacity=".5"/><path d="M9 17L16 22L23 17" stroke="#00ff88" stroke-width=".5" opacity=".3" stroke-dasharray="2 2"/></svg></div><div class="hlb">Role</div><div class="hvl">Data Science Manager, Apple</div></div>
-<div class="hcd"><div class="hi"><svg width="28" height="28" viewBox="0 0 32 32" fill="none"><path d="M16 28C16 22 14 18 12 15C10 12 7 10 4 10C3 10 2 11 2 12.5C2 15 4 18 7 20C9 21.5 11 22 13 22.5C14.5 23 16 23 16 25Z" fill="#3d6b4e" opacity=".8"/><ellipse cx="8" cy="14" rx="2" ry="3" fill="#faf8f3" opacity=".8" transform="rotate(-15 8 14)"/><path d="M16 28C16 22 18 18 20 15C22 12 25 10 28 10C29 10 30 11 30 12.5C30 15 28 18 25 20C23 21.5 21 22 19 22.5C17.5 23 16 23 16 25Z" fill="#7fa88b" opacity=".7"/><ellipse cx="24" cy="14" rx="2" ry="3" fill="#faf8f3" opacity=".8" transform="rotate(15 24 14)"/><circle cx="9" cy="17" r="1.2" fill="#00ff88" opacity=".5"/><circle cx="23" cy="17" r="1.2" fill="#4ecdc4" opacity=".5"/><path d="M9 17L16 22L23 17" stroke="#00ff88" stroke-width=".5" opacity=".3" stroke-dasharray="2 2"/></svg></div><div class="hlb">Education</div><div class="hvl">PhD, Computer Science (UNT)</div></div>
-<div class="hcd"><div class="hi"><svg width="28" height="28" viewBox="0 0 32 32" fill="none"><path d="M16 28C16 22 14 18 12 15C10 12 7 10 4 10C3 10 2 11 2 12.5C2 15 4 18 7 20C9 21.5 11 22 13 22.5C14.5 23 16 23 16 25Z" fill="#3d6b4e" opacity=".8"/><ellipse cx="8" cy="14" rx="2" ry="3" fill="#faf8f3" opacity=".8" transform="rotate(-15 8 14)"/><path d="M16 28C16 22 18 18 20 15C22 12 25 10 28 10C29 10 30 11 30 12.5C30 15 28 18 25 20C23 21.5 21 22 19 22.5C17.5 23 16 23 16 25Z" fill="#7fa88b" opacity=".7"/><ellipse cx="24" cy="14" rx="2" ry="3" fill="#faf8f3" opacity=".8" transform="rotate(15 24 14)"/><circle cx="9" cy="17" r="1.2" fill="#00ff88" opacity=".5"/><circle cx="23" cy="17" r="1.2" fill="#4ecdc4" opacity=".5"/><path d="M9 17L16 22L23 17" stroke="#00ff88" stroke-width=".5" opacity=".3" stroke-dasharray="2 2"/></svg></div><div class="hlb">Passion</div><div class="hvl">Public Health & Epidemiology</div></div>
-</div></div></section>
-
-<section class="rs" id="research"><div class="ri"><div class="sh fi-el"><span class="sn">02</span><h2 class="st">Research Interests</h2><div class="sl"></div></div>
-<div class="rg">
-<div class="rc fi-el"><div class="rci"><svg width="24" height="24" viewBox="0 0 32 32" fill="none"><path d="M16 28C16 22 14 18 12 15C10 12 7 10 4 10C3 10 2 11 2 12.5C2 15 4 18 7 20C9 21.5 11 22 13 22.5C14.5 23 16 23 16 25Z" fill="#7fa88b" opacity=".8"/><ellipse cx="8" cy="14" rx="2" ry="3" fill="#0a2e1a" opacity=".5" transform="rotate(-15 8 14)"/><path d="M16 28C16 22 18 18 20 15C22 12 25 10 28 10C29 10 30 11 30 12.5C30 15 28 18 25 20C23 21.5 21 22 19 22.5C17.5 23 16 23 16 25Z" fill="#b8d8c0" opacity=".7"/><ellipse cx="24" cy="14" rx="2" ry="3" fill="#0a2e1a" opacity=".5" transform="rotate(15 24 14)"/><circle cx="9" cy="17" r="1.2" fill="#00ff88" opacity=".6"/><circle cx="23" cy="17" r="1.2" fill="#4ecdc4" opacity=".6"/><path d="M9 17L16 22L23 17" stroke="#00ff88" stroke-width=".5" opacity=".4" stroke-dasharray="2 2"/></svg></div><h3>Experimentation & Causal Inference</h3><p>Designing and analyzing randomized experiments and observational studies to establish causal effects of algorithms and features on business and health outcomes.</p></div>
-<div class="rc fi-el"><div class="rci"><svg width="24" height="24" viewBox="0 0 32 32" fill="none"><path d="M16 28C16 22 14 18 12 15C10 12 7 10 4 10C3 10 2 11 2 12.5C2 15 4 18 7 20C9 21.5 11 22 13 22.5C14.5 23 16 23 16 25Z" fill="#7fa88b" opacity=".8"/><ellipse cx="8" cy="14" rx="2" ry="3" fill="#0a2e1a" opacity=".5" transform="rotate(-15 8 14)"/><path d="M16 28C16 22 18 18 20 15C22 12 25 10 28 10C29 10 30 11 30 12.5C30 15 28 18 25 20C23 21.5 21 22 19 22.5C17.5 23 16 23 16 25Z" fill="#b8d8c0" opacity=".7"/><ellipse cx="24" cy="14" rx="2" ry="3" fill="#0a2e1a" opacity=".5" transform="rotate(15 24 14)"/><circle cx="9" cy="17" r="1.2" fill="#00ff88" opacity=".6"/><circle cx="23" cy="17" r="1.2" fill="#4ecdc4" opacity=".6"/><path d="M9 17L16 22L23 17" stroke="#00ff88" stroke-width=".5" opacity=".4" stroke-dasharray="2 2"/></svg></div><h3>Customer Retention Models</h3><p>Using dynamic time warping, clustering, and time series analysis to understand user churn patterns and build models that improve retention strategies.</p></div>
-<div class="rc fi-el"><div class="rci"><svg width="24" height="24" viewBox="0 0 32 32" fill="none"><path d="M16 28C16 22 14 18 12 15C10 12 7 10 4 10C3 10 2 11 2 12.5C2 15 4 18 7 20C9 21.5 11 22 13 22.5C14.5 23 16 23 16 25Z" fill="#7fa88b" opacity=".8"/><ellipse cx="8" cy="14" rx="2" ry="3" fill="#0a2e1a" opacity=".5" transform="rotate(-15 8 14)"/><path d="M16 28C16 22 18 18 20 15C22 12 25 10 28 10C29 10 30 11 30 12.5C30 15 28 18 25 20C23 21.5 21 22 19 22.5C17.5 23 16 23 16 25Z" fill="#b8d8c0" opacity=".7"/><ellipse cx="24" cy="14" rx="2" ry="3" fill="#0a2e1a" opacity=".5" transform="rotate(15 24 14)"/><circle cx="9" cy="17" r="1.2" fill="#00ff88" opacity=".6"/><circle cx="23" cy="17" r="1.2" fill="#4ecdc4" opacity=".6"/><path d="M9 17L16 22L23 17" stroke="#00ff88" stroke-width=".5" opacity=".4" stroke-dasharray="2 2"/></svg></div><h3>Location Allocation</h3><p>Developing novel heuristic and metaheuristic algorithms for the p-median problem and balanced demand distribution in emergency response planning.</p></div>
-<div class="rc fi-el"><div class="rci"><svg width="24" height="24" viewBox="0 0 32 32" fill="none"><path d="M16 28C16 22 14 18 12 15C10 12 7 10 4 10C3 10 2 11 2 12.5C2 15 4 18 7 20C9 21.5 11 22 13 22.5C14.5 23 16 23 16 25Z" fill="#7fa88b" opacity=".8"/><ellipse cx="8" cy="14" rx="2" ry="3" fill="#0a2e1a" opacity=".5" transform="rotate(-15 8 14)"/><path d="M16 28C16 22 18 18 20 15C22 12 25 10 28 10C29 10 30 11 30 12.5C30 15 28 18 25 20C23 21.5 21 22 19 22.5C17.5 23 16 23 16 25Z" fill="#b8d8c0" opacity=".7"/><ellipse cx="24" cy="14" rx="2" ry="3" fill="#0a2e1a" opacity=".5" transform="rotate(15 24 14)"/><circle cx="9" cy="17" r="1.2" fill="#00ff88" opacity=".6"/><circle cx="23" cy="17" r="1.2" fill="#4ecdc4" opacity=".6"/><path d="M9 17L16 22L23 17" stroke="#00ff88" stroke-width=".5" opacity=".4" stroke-dasharray="2 2"/></svg></div><h3>Cluster Analysis</h3><p>Compositional analysis of metallic systems, sampling algorithms, and discovery of atomic clusters — bridging computational methods with materials science.</p></div>
-<div class="rc fi-el"><div class="rci"><svg width="24" height="24" viewBox="0 0 32 32" fill="none"><path d="M16 28C16 22 14 18 12 15C10 12 7 10 4 10C3 10 2 11 2 12.5C2 15 4 18 7 20C9 21.5 11 22 13 22.5C14.5 23 16 23 16 25Z" fill="#7fa88b" opacity=".8"/><ellipse cx="8" cy="14" rx="2" ry="3" fill="#0a2e1a" opacity=".5" transform="rotate(-15 8 14)"/><path d="M16 28C16 22 18 18 20 15C22 12 25 10 28 10C29 10 30 11 30 12.5C30 15 28 18 25 20C23 21.5 21 22 19 22.5C17.5 23 16 23 16 25Z" fill="#b8d8c0" opacity=".7"/><ellipse cx="24" cy="14" rx="2" ry="3" fill="#0a2e1a" opacity=".5" transform="rotate(15 24 14)"/><circle cx="9" cy="17" r="1.2" fill="#00ff88" opacity=".6"/><circle cx="23" cy="17" r="1.2" fill="#4ecdc4" opacity=".6"/><path d="M9 17L16 22L23 17" stroke="#00ff88" stroke-width=".5" opacity=".4" stroke-dasharray="2 2"/></svg></div><h3>Disease Modeling</h3><p>Simulating vector-borne disease outbreaks incorporating temperature-dependent mosquito ecology and transit networks to evaluate intervention strategies.</p></div>
-<div class="rc fi-el"><div class="rci"><svg width="24" height="24" viewBox="0 0 32 32" fill="none"><path d="M16 28C16 22 14 18 12 15C10 12 7 10 4 10C3 10 2 11 2 12.5C2 15 4 18 7 20C9 21.5 11 22 13 22.5C14.5 23 16 23 16 25Z" fill="#7fa88b" opacity=".8"/><ellipse cx="8" cy="14" rx="2" ry="3" fill="#0a2e1a" opacity=".5" transform="rotate(-15 8 14)"/><path d="M16 28C16 22 18 18 20 15C22 12 25 10 28 10C29 10 30 11 30 12.5C30 15 28 18 25 20C23 21.5 21 22 19 22.5C17.5 23 16 23 16 25Z" fill="#b8d8c0" opacity=".7"/><ellipse cx="24" cy="14" rx="2" ry="3" fill="#0a2e1a" opacity=".5" transform="rotate(15 24 14)"/><circle cx="9" cy="17" r="1.2" fill="#00ff88" opacity=".6"/><circle cx="23" cy="17" r="1.2" fill="#4ecdc4" opacity=".6"/><path d="M9 17L16 22L23 17" stroke="#00ff88" stroke-width=".5" opacity=".4" stroke-dasharray="2 2"/></svg></div><h3>Statistical Methods</h3><p>Variance reduction techniques, non-inferiority testing, significance testing for AUC at scale, and frameworks for budget cannibalization in marketplace experiments.</p></div>
-</div></div></section>
-
-<section class="ps" id="publications"><div class="pi"><div class="sh fi-el"><span class="sn">03</span><h2 class="st">Publications</h2><div class="sl"></div></div>
-<div id="pub-stats" class="fi-el" style="display:flex;gap:2rem;margin-bottom:2rem;font-family:'Source Code Pro',monospace;font-size:.85rem;color:var(--mo)"></div>
-<div class="pl" id="pub-list">
-<div class="pp fi-el" style="text-align:center;grid-template-columns:1fr"><div class="pc" style="color:var(--mo)">Loading publications from Google Scholar...</div></div>
+<!-- Plant decoration: bottom-left trailing tradescantia -->
+<div class="plant-decor plant-decor-bl">
+<svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Trailing vines -->
+  <path d="M180 10C160 30 140 50 120 80C100 110 90 130 70 150C50 170 30 185 10 195" stroke="#3d6b4e" stroke-width="1.5" fill="none" opacity="0.8"/>
+  <path d="M190 25C170 45 155 65 135 90C115 115 100 140 80 160C60 178 40 190 20 198" stroke="#5a8a6a" stroke-width="1" fill="none" opacity="0.6"/>
+  <!-- Tradescantia leaves along vine -->
+  <ellipse cx="155" cy="40" rx="8" ry="5" fill="#7fa88b" opacity="0.7" transform="rotate(-30 155 40)"/>
+  <ellipse cx="148" cy="45" rx="7" ry="4.5" fill="#b39ddb" opacity="0.4" transform="rotate(-25 148 45)"/>
+  <ellipse cx="130" cy="70" rx="9" ry="5.5" fill="#5a8a6a" opacity="0.7" transform="rotate(-40 130 70)"/>
+  <ellipse cx="123" cy="75" rx="8" ry="5" fill="#b39ddb" opacity="0.35" transform="rotate(-35 123 75)"/>
+  <ellipse cx="105" cy="100" rx="8" ry="5" fill="#7fa88b" opacity="0.6" transform="rotate(-50 105 100)"/>
+  <ellipse cx="98" cy="106" rx="7" ry="4.5" fill="#b39ddb" opacity="0.3" transform="rotate(-45 98 106)"/>
+  <ellipse cx="80" cy="135" rx="9" ry="5" fill="#5a8a6a" opacity="0.6" transform="rotate(-55 80 135)"/>
+  <ellipse cx="55" cy="162" rx="8" ry="5" fill="#7fa88b" opacity="0.5" transform="rotate(-60 55 162)"/>
+  <!-- Data flow particles -->
+  <circle cx="140" cy="55" r="2" fill="#00ff88" opacity="0.4"><animate attributeName="opacity" values="0.2;0.6;0.2" dur="3s" repeatCount="indefinite"/></circle>
+  <circle cx="110" cy="95" r="1.5" fill="#00c9a7" opacity="0.3"><animate attributeName="opacity" values="0.1;0.5;0.1" dur="2.5s" repeatCount="indefinite" begin="0.5s"/></circle>
+  <circle cx="70" cy="145" r="2" fill="#00ff88" opacity="0.3"><animate attributeName="opacity" values="0.15;0.5;0.15" dur="4s" repeatCount="indefinite" begin="1s"/></circle>
+</svg>
 </div>
-<p class="pn fi-el"><span id="pub-updated"></span> Full list and citations on <a href="https://scholar.google.com/citations?user=Pdd1FaEAAAAJ" target="_blank">Google Scholar</a></p>
-</div></section>
 
-<section class="es" id="experience"><div class="sh fi-el"><span class="sn">04</span><h2 class="st">Experience</h2><div class="sl"></div></div>
-<div class="tl">
-<div class="ti fi-el"><div class="td">October 2022 — Present</div><div class="tr">Data Science Manager</div><div class="to">Apple Inc, New York, NY</div><div class="tde">Leading the experimentation science team for Apple Ads. Developing experiment designs, metrics, and statistical analyses. Building frameworks for marketplace experiments and budget cannibalization analysis.</div><div class="tt"><span class="tti">Causal Inference</span><span class="tti">A/B Testing</span><span class="tti">Marketplace Experiments</span></div></div>
-<div class="ti fi-el"><div class="td">February 2020 — September 2022</div><div class="tr">(Senior) Data Scientist</div><div class="to">Twitter Inc, San Francisco, CA</div><div class="tde">Applied dynamic time warping to cluster churning users. Implemented non-inferiority tests and variance reduction for robust experimentation. Presented retention modeling at WSDM 2022.</div><div class="tt"><span class="tti">Customer Retention</span><span class="tti">Time Series</span><span class="tti">Variance Reduction</span></div></div>
-<div class="ti fi-el"><div class="td">June 2018 — September 2018</div><div class="tr">Data Science Intern</div><div class="to">Twitter Inc, San Francisco, CA</div><div class="tde">Product and Data Science team.</div></div>
-<div class="ti fi-el"><div class="td">August 2015 — December 2019</div><div class="tr">Research Assistant & Teaching Fellow</div><div class="to">CeCERA, University of North Texas, Denton, TX</div><div class="tde">Doctoral research on location-allocation algorithms for bio-emergency response, disease modeling, and computational epidemiology under Dr. Armin Mikler and Dr. Chetan Tiwari.</div><div class="tt"><span class="tti">Location Allocation</span><span class="tti">Disease Modeling</span><span class="tti">GIS</span></div></div>
-<div class="ti fi-el"><div class="td">June 2014 — July 2015</div><div class="tr">(Senior) Software Engineer</div><div class="to">Info Edge India Ltd, Noida, India</div><div class="tde">Backend systems engineering. Employee of the month for Redis project deployment.</div></div>
-</div></section>
-
-<section class="sec"><div class="sh fi-el"><span class="sn">05</span><h2 class="st">Education</h2><div class="sl"></div></div>
-<div class="tl">
-<div class="ti fi-el"><div class="td">2015 — 2019</div><div class="tr">PhD, Computer Science</div><div class="to">University of North Texas, Denton, TX</div><div class="tde">GPA: 4.0/4.0. Research in location-allocation, disease modeling, and computational epidemiology at CeCERA.</div></div>
-<div class="ti fi-el"><div class="td">2010 — 2014</div><div class="tr">B.Tech, Information Technology</div><div class="to">Malaviya National Institute of Technology, Jaipur, India</div><div class="tde">GPA: 8.41/10.</div></div>
-</div></section>
-
-<section class="sec"><div class="sh fi-el"><span class="sn">06</span><h2 class="st">Achievements</h2><div class="sl"></div></div>
-<div class="acg">
-<div class="aci fi-el"><div class="acii"><svg width="22" height="22" viewBox="0 0 32 32" fill="none"><path d="M16 28C16 22 14 18 12 15C10 12 7 10 4 10C3 10 2 11 2 12.5C2 15 4 18 7 20C9 21.5 11 22 13 22.5C14.5 23 16 23 16 25Z" fill="#3d6b4e" opacity=".8"/><ellipse cx="8" cy="14" rx="2" ry="3" fill="#faf8f3" opacity=".8" transform="rotate(-15 8 14)"/><path d="M16 28C16 22 18 18 20 15C22 12 25 10 28 10C29 10 30 11 30 12.5C30 15 28 18 25 20C23 21.5 21 22 19 22.5C17.5 23 16 23 16 25Z" fill="#7fa88b" opacity=".7"/><ellipse cx="24" cy="14" rx="2" ry="3" fill="#faf8f3" opacity=".8" transform="rotate(15 24 14)"/><circle cx="9" cy="17" r="1.2" fill="#00ff88" opacity=".5"/><circle cx="23" cy="17" r="1.2" fill="#4ecdc4" opacity=".5"/><path d="M9 17L16 22L23 17" stroke="#00ff88" stroke-width=".5" opacity=".3" stroke-dasharray="2 2"/></svg></div><div class="acit">Won the <strong>Ads Platform Hackathon</strong> at Apple in 2024</div></div>
-<div class="aci fi-el"><div class="acii"><svg width="22" height="22" viewBox="0 0 32 32" fill="none"><path d="M16 28C16 22 14 18 12 15C10 12 7 10 4 10C3 10 2 11 2 12.5C2 15 4 18 7 20C9 21.5 11 22 13 22.5C14.5 23 16 23 16 25Z" fill="#3d6b4e" opacity=".8"/><ellipse cx="8" cy="14" rx="2" ry="3" fill="#faf8f3" opacity=".8" transform="rotate(-15 8 14)"/><path d="M16 28C16 22 18 18 20 15C22 12 25 10 28 10C29 10 30 11 30 12.5C30 15 28 18 25 20C23 21.5 21 22 19 22.5C17.5 23 16 23 16 25Z" fill="#7fa88b" opacity=".7"/><ellipse cx="24" cy="14" rx="2" ry="3" fill="#faf8f3" opacity=".8" transform="rotate(15 24 14)"/><circle cx="9" cy="17" r="1.2" fill="#00ff88" opacity=".5"/><circle cx="23" cy="17" r="1.2" fill="#4ecdc4" opacity=".5"/><path d="M9 17L16 22L23 17" stroke="#00ff88" stroke-width=".5" opacity=".3" stroke-dasharray="2 2"/></svg></div><div class="acit">Talk on <strong>DTW-based customer retention modeling</strong> at WSDM 2022</div></div>
-<div class="aci fi-el"><div class="acii"><svg width="22" height="22" viewBox="0 0 32 32" fill="none"><path d="M16 28C16 22 14 18 12 15C10 12 7 10 4 10C3 10 2 11 2 12.5C2 15 4 18 7 20C9 21.5 11 22 13 22.5C14.5 23 16 23 16 25Z" fill="#3d6b4e" opacity=".8"/><ellipse cx="8" cy="14" rx="2" ry="3" fill="#faf8f3" opacity=".8" transform="rotate(-15 8 14)"/><path d="M16 28C16 22 18 18 20 15C22 12 25 10 28 10C29 10 30 11 30 12.5C30 15 28 18 25 20C23 21.5 21 22 19 22.5C17.5 23 16 23 16 25Z" fill="#7fa88b" opacity=".7"/><ellipse cx="24" cy="14" rx="2" ry="3" fill="#faf8f3" opacity=".8" transform="rotate(15 24 14)"/><circle cx="9" cy="17" r="1.2" fill="#00ff88" opacity=".5"/><circle cx="23" cy="17" r="1.2" fill="#4ecdc4" opacity=".5"/><path d="M9 17L16 22L23 17" stroke="#00ff88" stroke-width=".5" opacity=".3" stroke-dasharray="2 2"/></svg></div><div class="acit">Won <strong>People's Choice Award</strong> at Twitter Hackweek 2020</div></div>
-<div class="aci fi-el"><div class="acii"><svg width="22" height="22" viewBox="0 0 32 32" fill="none"><path d="M16 28C16 22 14 18 12 15C10 12 7 10 4 10C3 10 2 11 2 12.5C2 15 4 18 7 20C9 21.5 11 22 13 22.5C14.5 23 16 23 16 25Z" fill="#3d6b4e" opacity=".8"/><ellipse cx="8" cy="14" rx="2" ry="3" fill="#faf8f3" opacity=".8" transform="rotate(-15 8 14)"/><path d="M16 28C16 22 18 18 20 15C22 12 25 10 28 10C29 10 30 11 30 12.5C30 15 28 18 25 20C23 21.5 21 22 19 22.5C17.5 23 16 23 16 25Z" fill="#7fa88b" opacity=".7"/><ellipse cx="24" cy="14" rx="2" ry="3" fill="#faf8f3" opacity=".8" transform="rotate(15 24 14)"/><circle cx="9" cy="17" r="1.2" fill="#00ff88" opacity=".5"/><circle cx="23" cy="17" r="1.2" fill="#4ecdc4" opacity=".5"/><path d="M9 17L16 22L23 17" stroke="#00ff88" stroke-width=".5" opacity=".3" stroke-dasharray="2 2"/></svg></div><div class="acit"><strong>Employee of the Month</strong> for Redis deployment at Info Edge India</div></div>
-</div></section>
-
-<section class="fs" id="contact"><div class="fi">
-<h2 class="fc fi-el">Let's Grow Ideas Together</h2>
-<p class="fsu fi-el">Interested in collaboration, research, or connecting? Reach out.</p>
-<div class="fls fi-el">
-<a href="https://www.linkedin.com/in/harsha-helsing-7b348847/" class="fl" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.064 2.064 0 1 1 0-4.128 2.064 2.064 0 0 1 0 4.128zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
-<a href="https://scholar.google.com/citations?user=Pdd1FaEAAAAJ" class="fl" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>Scholar</a>
-<a href="https://github.com/harsha2412" class="fl" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.95 11.95 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>GitHub</a>
-<a href="mailto:harsha.gwalani@gmail.com" class="fl"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>Email</a>
+<!-- Plant decoration: top-right monstera leaf -->
+<div class="plant-decor plant-decor-tr">
+<svg viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Single monstera leaf -->
+  <path d="M120 140C115 120 105 100 90 80C75 60 55 45 35 35C25 30 15 35 12 45C10 60 20 80 40 95C55 107 70 112 85 115C100 118 112 115 118 108C122 100 122 90 120 140Z" fill="#3d6b4e" opacity="0.7"/>
+  <!-- Fenestrations -->
+  <ellipse cx="55" cy="65" rx="7" ry="10" fill="#000000" opacity="0.8" transform="rotate(-15 55 65)"/>
+  <ellipse cx="75" cy="80" rx="5" ry="8" fill="#000000" opacity="0.8" transform="rotate(-5 75 80)"/>
+  <ellipse cx="50" cy="88" rx="6" ry="5" fill="#000000" opacity="0.8" transform="rotate(10 50 88)"/>
+  <!-- Midrib -->
+  <path d="M118 130C105 105 85 75 45 45" stroke="#1a4a2e" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <!-- Secondary veins -->
+  <path d="M95 95C80 90 65 88 50 92" stroke="#1a4a2e" stroke-width="0.8" fill="none" opacity="0.3"/>
+  <path d="M100 80C88 72 70 68 55 70" stroke="#1a4a2e" stroke-width="0.8" fill="none" opacity="0.3"/>
+  <!-- Glow node -->
+  <circle cx="70" cy="75" r="2.5" fill="#00ff88" opacity="0.3"><animate attributeName="opacity" values="0.15;0.5;0.15" dur="3.5s" repeatCount="indefinite"/></circle>
+</svg>
 </div>
-<div class="fb"><div class="fco">&copy; 2026 Harsha Gwalani Helsing</div><div class="fm">Cultivated with <span>&hearts;</span> and code</div></div>
-</div></section>
+
+<div id="terminal-container">
+  <div id="terminal-header">
+    <span class="dot dot-r"></span>
+    <span class="dot dot-y"></span>
+    <span class="dot dot-g"></span>
+    <span class="header-title">harsha_helsing &mdash; bash</span>
+  </div>
+  <div id="terminal-output"></div>
+  <div id="terminal-input-line">
+    <span class="prompt">harsha@portfolio:~$</span>
+    <input type="text" id="cmd-input" autocomplete="off" spellcheck="false" autofocus />
+  </div>
+  <div class="cmd-palette">
+    <button class="cmd-pill" data-cmd="about">about</button>
+    <button class="cmd-pill" data-cmd="research">research</button>
+    <button class="cmd-pill" data-cmd="publications">pubs</button>
+    <button class="cmd-pill" data-cmd="experience">experience</button>
+    <button class="cmd-pill" data-cmd="skills">skills</button>
+    <button class="cmd-pill" data-cmd="contact">contact</button>
+    <button class="cmd-pill" data-cmd="help">help</button>
+    <button class="cmd-pill" data-cmd="clear">clear</button>
+  </div>
+</div>
 
 <script>
-const n=document.getElementById('nb');window.addEventListener('scroll',()=>n.classList.toggle('scrolled',window.scrollY>50));
-const o=new IntersectionObserver(e=>{e.forEach((x,i)=>{if(x.isIntersecting){setTimeout(()=>x.target.classList.add('visible'),i*80);o.unobserve(x.target)}})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
-document.querySelectorAll('.fi-el').forEach(e=>o.observe(e));
-document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'})})});
+const output = document.getElementById('terminal-output');
+const input = document.getElementById('cmd-input');
+const history = [];
+let historyIdx = -1;
 
-// Load publications from publications.json
-function highlightAuthor(authors){
-  return authors.replace(/(Harsha Gwalani)/gi,'<strong>$1</strong>');
+// Splash screen with plant art
+function showSplash() {
+  const splash = `
+<div class="welcome-art">
+<svg viewBox="0 0 600 280" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width:520px;width:100%;height:auto;display:block;margin:0 auto;">
+  <!-- Planters -->
+  <rect x="60" y="230" width="100" height="40" rx="4" fill="#1a4a2e" opacity="0.8"/>
+  <rect x="250" y="220" width="100" height="50" rx="3" fill="#1a4a2e" opacity="0.85"/>
+  <rect x="440" y="235" width="110" height="35" rx="5" fill="#1a4a2e" opacity="0.8"/>
+  <!-- Planter rims -->
+  <rect x="55" y="225" width="110" height="8" rx="3" fill="#3d6b4e" opacity="0.6"/>
+  <rect x="245" y="215" width="110" height="8" rx="3" fill="#3d6b4e" opacity="0.6"/>
+  <rect x="435" y="230" width="120" height="8" rx="3" fill="#3d6b4e" opacity="0.6"/>
+
+  <!-- === MONSTERA DELICIOSA (left) === -->
+  <!-- Stem -->
+  <path d="M110 225C108 200 105 175 100 155" stroke="#3d6b4e" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M100 225C95 195 88 165 80 140" stroke="#3d6b4e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M120 225C125 190 130 160 135 135" stroke="#3d6b4e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Leaf 1 (large, left-facing) -->
+  <path d="M80 140C60 120 30 100 15 90C8 86 3 90 3 98C4 115 18 135 38 148C52 157 65 160 78 158C88 155 90 148 85 142Z" fill="#3d6b4e" opacity="0.85"/>
+  <!-- Fenestrations leaf 1 -->
+  <ellipse cx="35" cy="110" rx="6" ry="9" fill="#000000" opacity="0.75" transform="rotate(-20 35 110)"/>
+  <ellipse cx="50" cy="125" rx="5" ry="7" fill="#000000" opacity="0.75" transform="rotate(-10 50 125)"/>
+  <ellipse cx="30" cy="132" rx="4" ry="6" fill="#000000" opacity="0.7" transform="rotate(5 30 132)"/>
+  <ellipse cx="55" cy="140" rx="4" ry="5" fill="#000000" opacity="0.65"/>
+  <!-- Veining leaf 1 -->
+  <path d="M80 140C55 125 30 105 15 92" stroke="#1a4a2e" stroke-width="1.2" fill="none" opacity="0.5"/>
+  <path d="M65 135C50 132 38 133 28 138" stroke="#1a4a2e" stroke-width="0.7" fill="none" opacity="0.3"/>
+  <path d="M60 125C45 118 32 116 22 118" stroke="#1a4a2e" stroke-width="0.7" fill="none" opacity="0.3"/>
+
+  <!-- Leaf 2 (large, right-facing) -->
+  <path d="M135 135C155 115 180 95 200 88C210 85 215 90 214 100C212 118 198 138 178 150C162 158 148 158 138 155C130 150 130 142 135 135Z" fill="#5a8a6a" opacity="0.8"/>
+  <!-- Fenestrations leaf 2 -->
+  <ellipse cx="175" cy="108" rx="6" ry="9" fill="#000000" opacity="0.7" transform="rotate(15 175 108)"/>
+  <ellipse cx="158" cy="125" rx="5" ry="7" fill="#000000" opacity="0.7" transform="rotate(5 158 125)"/>
+  <ellipse cx="180" cy="130" rx="4" ry="6" fill="#000000" opacity="0.65" transform="rotate(-5 180 130)"/>
+  <!-- Veining leaf 2 -->
+  <path d="M135 135C160 118 185 100 200 90" stroke="#1a4a2e" stroke-width="1.2" fill="none" opacity="0.5"/>
+  <path d="M148 140C162 135 175 136 185 142" stroke="#1a4a2e" stroke-width="0.7" fill="none" opacity="0.3"/>
+
+  <!-- Leaf 3 (top, smaller) -->
+  <path d="M100 155C92 130 85 105 82 80C81 68 86 62 95 63C108 65 115 78 115 95C115 108 110 125 105 145Z" fill="#7fa88b" opacity="0.7"/>
+  <ellipse cx="95" cy="88" rx="4" ry="7" fill="#000000" opacity="0.6" transform="rotate(-5 95 88)"/>
+  <ellipse cx="100" cy="108" rx="3.5" ry="6" fill="#000000" opacity="0.6"/>
+  <path d="M100 152C95 125 88 95 83 75" stroke="#1a4a2e" stroke-width="1" fill="none" opacity="0.4"/>
+
+  <!-- Data flow on monstera -->
+  <path d="M108 220C106 190 100 160 95 140" stroke="#00ff88" stroke-width="1" opacity="0.3" stroke-dasharray="4 3">
+    <animate attributeName="stroke-dashoffset" from="0" to="-14" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="40" cy="115" r="2.5" fill="#00ff88" opacity="0.4"><animate attributeName="opacity" values="0.2;0.6;0.2" dur="3s" repeatCount="indefinite"/></circle>
+  <circle cx="170" cy="112" r="2" fill="#00c9a7" opacity="0.35"><animate attributeName="opacity" values="0.15;0.55;0.15" dur="2.5s" repeatCount="indefinite" begin="0.5s"/></circle>
+  <circle cx="95" cy="80" r="2" fill="#00ff88" opacity="0.3"><animate attributeName="opacity" values="0.1;0.5;0.1" dur="4s" repeatCount="indefinite" begin="1s"/></circle>
+
+  <!-- === SNAKE PLANT (center) === -->
+  <!-- Leaves (tall, upright, banded) -->
+  <path d="M285 215C284 180 283 140 282 105C281 85 283 70 288 60C292 55 296 55 299 60C303 70 304 85 304 105C303 140 302 180 300 215Z" fill="#3d6b4e" opacity="0.9"/>
+  <path d="M300 215C300 175 301 135 303 100C304 80 308 62 313 50C317 43 322 43 325 50C328 62 329 80 328 100C326 135 324 175 322 215Z" fill="#5a8a6a" opacity="0.85"/>
+  <path d="M265 215C264 185 262 155 260 125C259 108 261 92 265 80C268 73 273 73 276 80C279 92 280 108 279 125C277 155 275 185 273 215Z" fill="#7fa88b" opacity="0.8"/>
+  <path d="M315 215C316 180 318 148 321 118C322 100 326 85 331 72C334 66 338 66 340 72C342 85 342 100 340 118C337 148 334 180 332 215Z" fill="#3d6b4e" opacity="0.75"/>
+  <path d="M250 215C249 190 247 165 245 142C244 128 246 115 250 105C253 99 257 99 259 105C261 115 262 128 261 142C259 165 257 190 255 215Z" fill="#5a8a6a" opacity="0.7"/>
+  <!-- Yellow edges -->
+  <path d="M282 105C281 85 283 70 288 60" stroke="#ffd54f" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <path d="M304 105C304 85 308 62 313 50" stroke="#ffd54f" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <path d="M260 125C259 108 261 92 265 80" stroke="#ffd54f" stroke-width="0.8" fill="none" opacity="0.35"/>
+  <path d="M321 118C322 100 326 85 331 72" stroke="#ffd54f" stroke-width="0.8" fill="none" opacity="0.35"/>
+  <path d="M245 142C244 128 246 115 250 105" stroke="#ffd54f" stroke-width="0.7" fill="none" opacity="0.3"/>
+  <!-- Horizontal bands -->
+  <line x1="283" y1="120" x2="303" y2="120" stroke="#1a4a2e" stroke-width="0.8" opacity="0.3"/>
+  <line x1="283" y1="145" x2="303" y2="145" stroke="#1a4a2e" stroke-width="0.8" opacity="0.25"/>
+  <line x1="283" y1="170" x2="303" y2="170" stroke="#1a4a2e" stroke-width="0.8" opacity="0.2"/>
+  <line x1="301" y1="115" x2="327" y2="115" stroke="#1a4a2e" stroke-width="0.8" opacity="0.3"/>
+  <line x1="301" y1="140" x2="327" y2="140" stroke="#1a4a2e" stroke-width="0.8" opacity="0.25"/>
+  <line x1="301" y1="165" x2="327" y2="165" stroke="#1a4a2e" stroke-width="0.8" opacity="0.2"/>
+  <line x1="261" y1="135" x2="278" y2="135" stroke="#1a4a2e" stroke-width="0.7" opacity="0.25"/>
+  <line x1="261" y1="160" x2="278" y2="160" stroke="#1a4a2e" stroke-width="0.7" opacity="0.2"/>
+  <line x1="316" y1="130" x2="339" y2="130" stroke="#1a4a2e" stroke-width="0.7" opacity="0.25"/>
+  <line x1="316" y1="155" x2="339" y2="155" stroke="#1a4a2e" stroke-width="0.7" opacity="0.2"/>
+  <!-- Data flow on snake plant -->
+  <path d="M290 210C289 170 288 130 287 90" stroke="#00ff88" stroke-width="0.8" opacity="0.25" stroke-dasharray="3 4">
+    <animate attributeName="stroke-dashoffset" from="0" to="-14" dur="4s" repeatCount="indefinite"/>
+  </path>
+  <path d="M310 210C311 165 313 120 315 80" stroke="#00c9a7" stroke-width="0.8" opacity="0.2" stroke-dasharray="3 4">
+    <animate attributeName="stroke-dashoffset" from="0" to="-14" dur="3.5s" repeatCount="indefinite" begin="0.5s"/>
+  </path>
+  <circle cx="288" cy="95" r="2" fill="#00ff88" opacity="0.35"><animate attributeName="opacity" values="0.15;0.5;0.15" dur="3.2s" repeatCount="indefinite" begin="0.3s"/></circle>
+  <circle cx="313" cy="70" r="1.8" fill="#00c9a7" opacity="0.3"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="2.8s" repeatCount="indefinite" begin="0.8s"/></circle>
+
+  <!-- === TRADESCANTIA / SPIDERWORT (right) === -->
+  <!-- Main trailing stems -->
+  <path d="M490 230C485 210 478 190 468 175C458 160 445 150 430 145" stroke="#5a8a6a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M500 230C498 205 500 185 505 168C510 152 520 140 535 132" stroke="#3d6b4e" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M495 230C492 215 488 200 480 188C470 175 458 168 445 165" stroke="#7fa88b" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M505 230C508 212 515 195 525 182C535 170 548 162 560 158" stroke="#5a8a6a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Upright stems -->
+  <path d="M485 230C483 205 480 180 475 155C472 140 475 125 480 112" stroke="#3d6b4e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M505 230C507 200 510 170 515 145C518 128 515 112 510 98" stroke="#5a8a6a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Tradescantia leaves (oval, alternating green/purple) -->
+  <!-- Along trailing stems -->
+  <ellipse cx="475" cy="185" rx="10" ry="6" fill="#7fa88b" opacity="0.75" transform="rotate(-35 475 185)"/>
+  <ellipse cx="460" cy="165" rx="9" ry="5.5" fill="#b39ddb" opacity="0.35" transform="rotate(-45 460 165)"/>
+  <ellipse cx="442" cy="152" rx="10" ry="5.5" fill="#5a8a6a" opacity="0.7" transform="rotate(-50 442 152)"/>
+  <ellipse cx="510" cy="178" rx="9" ry="5.5" fill="#7fa88b" opacity="0.7" transform="rotate(25 510 178)"/>
+  <ellipse cx="522" cy="155" rx="10" ry="6" fill="#b39ddb" opacity="0.3" transform="rotate(35 522 155)"/>
+  <ellipse cx="538" cy="140" rx="9" ry="5" fill="#5a8a6a" opacity="0.65" transform="rotate(40 538 140)"/>
+  <ellipse cx="455" cy="170" rx="8" ry="5" fill="#5a8a6a" opacity="0.6" transform="rotate(-40 455 170)"/>
+  <ellipse cx="530" cy="170" rx="8" ry="5" fill="#7fa88b" opacity="0.6" transform="rotate(30 530 170)"/>
+  <ellipse cx="550" cy="160" rx="8" ry="5" fill="#b39ddb" opacity="0.25" transform="rotate(35 550 160)"/>
+  <!-- Along upright stems -->
+  <ellipse cx="478" cy="140" rx="11" ry="6.5" fill="#3d6b4e" opacity="0.8" transform="rotate(-10 478 140)"/>
+  <ellipse cx="480" cy="122" rx="10" ry="6" fill="#b39ddb" opacity="0.3" transform="rotate(-5 480 122)"/>
+  <ellipse cx="512" cy="132" rx="11" ry="6.5" fill="#5a8a6a" opacity="0.8" transform="rotate(8 512 132)"/>
+  <ellipse cx="513" cy="112" rx="10" ry="6" fill="#b39ddb" opacity="0.35" transform="rotate(5 513 112)"/>
+  <ellipse cx="508" cy="105" rx="9" ry="5.5" fill="#7fa88b" opacity="0.7" transform="rotate(3 508 105)"/>
+  <!-- Leaf veins on larger leaves -->
+  <line x1="470" y1="140" x2="486" y2="140" stroke="#1a4a2e" stroke-width="0.5" opacity="0.4"/>
+  <line x1="504" y1="132" x2="520" y2="132" stroke="#1a4a2e" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Data flow on tradescantia -->
+  <path d="M490 225C487 200 482 175 475 155" stroke="#00c9a7" stroke-width="0.8" opacity="0.25" stroke-dasharray="3 3">
+    <animate attributeName="stroke-dashoffset" from="0" to="-12" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="465" cy="158" r="2" fill="#00c9a7" opacity="0.35"><animate attributeName="opacity" values="0.15;0.55;0.15" dur="3s" repeatCount="indefinite" begin="0.2s"/></circle>
+  <circle cx="525" cy="145" r="1.8" fill="#00ff88" opacity="0.3"><animate attributeName="opacity" values="0.1;0.5;0.1" dur="2.8s" repeatCount="indefinite" begin="0.7s"/></circle>
+  <circle cx="480" cy="118" r="2" fill="#00ff88" opacity="0.3"><animate attributeName="opacity" values="0.15;0.5;0.15" dur="3.5s" repeatCount="indefinite" begin="1.2s"/></circle>
+
+  <!-- Connection lines between plants (data network) -->
+  <path d="M170 115L250 105" stroke="#00ff88" stroke-width="0.5" opacity="0.12" stroke-dasharray="2 4">
+    <animate attributeName="opacity" values="0.06;0.2;0.06" dur="4s" repeatCount="indefinite"/>
+  </path>
+  <path d="M340 75L430 145" stroke="#00c9a7" stroke-width="0.5" opacity="0.1" stroke-dasharray="2 4">
+    <animate attributeName="opacity" values="0.05;0.18;0.05" dur="3.5s" repeatCount="indefinite" begin="0.5s"/>
+  </path>
+  <path d="M200 88L265 80" stroke="#00c9a7" stroke-width="0.4" opacity="0.08" stroke-dasharray="2 3">
+    <animate attributeName="opacity" values="0.04;0.15;0.04" dur="5s" repeatCount="indefinite" begin="1s"/>
+  </path>
+
+  <!-- Faint code text overlays -->
+  <text x="135" y="250" font-family="monospace" font-size="7" fill="#00ff88" opacity="0.08">p &lt; 0.05</text>
+  <text x="350" y="255" font-family="monospace" font-size="7" fill="#00c9a7" opacity="0.07">ATE = E[Y1-Y0]</text>
+  <text x="445" y="260" font-family="monospace" font-size="6" fill="#00ff88" opacity="0.06">import causal</text>
+</svg>
+</div>
+<div class="cmd-body" style="color:var(--tg);margin-bottom:0.3rem;">Welcome.</div>
+<div class="cmd-body">I am <span style="color:var(--term-bright);">Harsha Gwalani Helsing</span>, Data science manager, experimentation person in my day job as well as weekend job through gardening and art.</div>
+<div class="cmd-body" style="margin-top:0.8rem;">Type <span style="color:var(--tg)">help</span> to see what's here, or jump to a section:</div>
+<div class="cmd-body"><span class="cmd-clickable" data-cmd="about">about</span> &middot; <span class="cmd-clickable" data-cmd="research">research</span> &middot; <span class="cmd-clickable" data-cmd="publications">publications</span> &middot; <span class="cmd-clickable" data-cmd="experience">experience</span> &middot; <span class="cmd-clickable" data-cmd="skills">skills</span> &middot; <span class="cmd-clickable" data-cmd="contact">contact</span></div>
+`;
+  output.innerHTML = splash;
 }
 
-fetch('publications.json')
-  .then(r=>r.json())
-  .then(data=>{
-    // Render stats
-    const stats=document.getElementById('pub-stats');
-    if(data.total_citations||data.h_index){
-      stats.innerHTML=`
-        <span>Citations: <strong style="color:var(--dg)">${data.total_citations}</strong></span>
-        <span>h-index: <strong style="color:var(--dg)">${data.h_index}</strong></span>
-        <span>i10-index: <strong style="color:var(--dg)">${data.i10_index}</strong></span>
-      `;
+function escapeHtml(str) {
+  const d = document.createElement('div');
+  d.textContent = str;
+  return d.innerHTML;
+}
+
+function appendOutput(html) {
+  output.insertAdjacentHTML('beforeend', html);
+  output.scrollTop = output.scrollHeight;
+}
+
+function scrollToBottom() {
+  output.scrollTop = output.scrollHeight;
+}
+
+// Command handlers
+const commands = {
+  help: {
+    desc: 'List available commands',
+    fn() {
+      appendOutput(`
+<div class="cmd-section">
+<div class="cmd-heading">AVAILABLE COMMANDS</div>
+<div class="help-cmd"><span class="help-cmd-name cmd-clickable" data-cmd="about">about</span><span class="help-cmd-desc">Who I am and what I do</span></div>
+<div class="help-cmd"><span class="help-cmd-name cmd-clickable" data-cmd="research">research</span><span class="help-cmd-desc">Research background</span></div>
+<div class="help-cmd"><span class="help-cmd-name cmd-clickable" data-cmd="publications">publications</span><span class="help-cmd-desc">Academic papers (fetched from Google Scholar)</span></div>
+<div class="help-cmd"><span class="help-cmd-name cmd-clickable" data-cmd="experience">experience</span><span class="help-cmd-desc">Work history</span></div>
+<div class="help-cmd"><span class="help-cmd-name cmd-clickable" data-cmd="education">education</span><span class="help-cmd-desc">Degrees</span></div>
+<div class="help-cmd"><span class="help-cmd-name cmd-clickable" data-cmd="skills">skills</span><span class="help-cmd-desc">Technical stack</span></div>
+<div class="help-cmd"><span class="help-cmd-name cmd-clickable" data-cmd="achievements">achievements</span><span class="help-cmd-desc">Awards and talks</span></div>
+<div class="help-cmd"><span class="help-cmd-name cmd-clickable" data-cmd="contact">contact</span><span class="help-cmd-desc">How to reach me</span></div>
+<div class="help-cmd"><span class="help-cmd-name cmd-clickable" data-cmd="ls">ls</span><span class="help-cmd-desc">Same as help</span></div>
+<div class="help-cmd"><span class="help-cmd-name cmd-clickable" data-cmd="whoami">whoami</span><span class="help-cmd-desc">One-liner</span></div>
+<div class="help-cmd"><span class="help-cmd-name cmd-clickable" data-cmd="clear">clear</span><span class="help-cmd-desc">Clear terminal</span></div>
+</div>`);
     }
+  },
 
-    // Render publications
-    const list=document.getElementById('pub-list');
-    list.innerHTML=data.publications.map(p=>{
-      const titleHtml=p.url
-        ?`<a href="${p.url}" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(61,107,78,.2)">${p.title}</a>`
-        :p.title;
-      const citeBadge=p.citations>0
-        ?`<span style="font-family:'Source Code Pro',monospace;font-size:.72rem;color:var(--mo);background:rgba(0,255,136,.08);padding:.15rem .5rem;border-radius:3px;margin-left:.5rem">${p.citations} cited</span>`
-        :'';
-      return `<div class="pp fi-el"><div class="py">${p.year||'—'}</div><div class="pc"><h3>${titleHtml}${citeBadge}</h3><p class="pa">${highlightAuthor(p.authors)}</p>${p.venue?`<span class="pv">${p.venue}</span>`:''}</div></div>`;
-    }).join('');
+  ls: {
+    desc: 'List sections',
+    fn() { commands.help.fn(); }
+  },
 
-    // Update timestamp
-    const updated=document.getElementById('pub-updated');
-    if(data.last_updated){
-      updated.textContent=`Last synced: ${data.last_updated}. `;
+  about: {
+    desc: 'About me',
+    fn() {
+      appendOutput(`
+<div class="cmd-section">
+<div class="cmd-heading">ABOUT</div>
+<div class="cmd-body">I manage the experimentation science team for Apple Ads. In practice, this means my team figures out whether new algorithms and features actually work &mdash; designing experiments, defining metrics, and doing the statistical analysis to distinguish real effects from noise.</div>
+<div class="cmd-body">Before Apple, I was a data scientist at Twitter, where I built models to understand why users leave (and what, if anything, can be done about it), came up with future hypotheses to try and worked on the A/B testing infrastructure for those features.</div>
+<div class="cmd-body">My PhD is in computer science from the University of North Texas. My PhD research primarily focused on location allocation models in the context of bioemergencies and epidemics. I worked with <a href="https://cas.gsu.edu/profile/armin-mikler/" target="_blank" class="cmd-link">Dr. Armin Mikler</a> and <a href="https://cas.gsu.edu/profile/chetan-tiwari/" target="_blank" class="cmd-link">Dr. Chetan Tiwari</a> at CeCERA.</div>
+</div>`);
     }
+  },
 
-    // Re-observe new elements for scroll animation
-    list.querySelectorAll('.fi-el').forEach(e=>o.observe(e));
-  })
-  .catch(err=>{
-    console.warn('Could not load publications.json:',err);
-    document.getElementById('pub-list').innerHTML='<div class="pp" style="grid-template-columns:1fr;text-align:center"><div class="pc" style="color:var(--mo)">Publications will appear here once data syncs. Visit <a href="https://scholar.google.com/citations?user=Pdd1FaEAAAAJ">Google Scholar</a> in the meantime.</div></div>';
+  research: {
+    desc: 'Research background',
+    fn() {
+      appendOutput(`
+<div class="cmd-section">
+<div class="cmd-heading">RESEARCH BACKGROUND</div>
+<div class="cmd-subheading">&gt; Experimentation &amp; Causal Inference</div>
+<div class="cmd-body cmd-indent">I design randomized experiments and analyze observational data to identify causal effects in ad marketplaces and product features. I spend a lot of time thinking about marketplace interference, variance reduction techniques, and non-inferiority testing frameworks.</div>
+<div class="cmd-subheading">&gt; Location-Allocation Algorithms</div>
+<div class="cmd-body cmd-indent">My dissertation developed heuristics and metaheuristics for the p-median problem, focused on how to distribute demand across service facilities in a balanced way during emergency response scenarios.</div>
+<div class="cmd-subheading">&gt; Customer Retention Modeling</div>
+<div class="cmd-body cmd-indent">I have used dynamic time warping and clustering to characterize how users churn and what their behavior looks like before they leave. This work combines time series analysis with behavioral prediction to inform retention strategies.</div>
+<div class="cmd-subheading">&gt; Computational Epidemiology</div>
+<div class="cmd-body cmd-indent">I built agent-based simulations of disease outbreaks that incorporate temperature-dependent mosquito ecology and transit networks to evaluate how interventions might slow transmission.</div>
+<div class="cmd-subheading">&gt; Cluster Analysis (Materials Science)</div>
+<div class="cmd-body cmd-indent">I worked on compositional analysis of metallic alloy systems, developing sampling algorithms to discover atomic clusters in large combinatorial search spaces.</div>
+<div class="cmd-subheading">&gt; Statistical Methods</div>
+<div class="cmd-body cmd-indent">I work on advanced statistical methods for A/B testing, significance testing for AUC at scale, and frameworks for measuring budget cannibalization in marketplace experiments.</div>
+</div>`);
+    }
+  },
+
+  publications: {
+    desc: 'Academic publications',
+    fn() {
+      const loadingId = 'pub-loading-' + Date.now();
+      appendOutput(`<div id="${loadingId}" class="cmd-dim">Fetching publications...</div>`);
+      fetch('publications.json')
+        .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(data => {
+          const loader = document.getElementById(loadingId);
+          if (loader) loader.remove();
+          let html = '<div class="cmd-section"><div class="cmd-heading">PUBLICATIONS</div>';
+          html += `<div class="cmd-body" style="margin-bottom:1rem;">Full profile on <a href="https://scholar.google.com/citations?user=Pdd1FaEAAAAJ" target="_blank" class="cmd-link">Google Scholar</a>.</div>`;
+          data.publications.forEach(p => {
+            const authors = p.authors.replace(/(Harsha Gwalani)/gi, '<strong>$1</strong>');
+            const titleHtml = p.url ? `<a href="${p.url}" target="_blank" class="cmd-link">${p.title}</a>` : `<span class="pub-title">${p.title}</span>`;
+            const cite = p.citations > 0 ? ` <span class="pub-cite">[${p.citations} cited]</span>` : '';
+            html += `<div class="pub-entry">
+              <div>${titleHtml}${cite}</div>
+              <div class="pub-authors">${authors}</div>
+              ${p.venue ? `<div class="pub-venue">${p.venue} (${p.year || '—'})</div>` : `<div class="pub-venue">${p.year || '—'}</div>`}
+            </div>`;
+          });
+          html += `<div class="cmd-dim" style="margin-top:1rem;">Last synced: ${data.last_updated || 'unknown'}. Full list on <a href="https://scholar.google.com/citations?user=Pdd1FaEAAAAJ" target="_blank" class="cmd-link">Google Scholar</a>.</div>`;
+          html += '</div>';
+          appendOutput(html);
+        })
+        .catch(() => {
+          const loader = document.getElementById(loadingId);
+          if (loader) loader.remove();
+          appendOutput('<div class="cmd-section"><div class="cmd-heading">PUBLICATIONS</div><div class="cmd-body">Publications load from publications.json when served over HTTP (e.g. on GitHub Pages).</div><div class="cmd-body">In the meantime, full list on <a href="https://scholar.google.com/citations?user=Pdd1FaEAAAAJ" target="_blank" class="cmd-link">Google Scholar</a>.</div></div>');
+        });
+    }
+  },
+
+  experience: {
+    desc: 'Work history',
+    fn() {
+      appendOutput(`
+<div class="cmd-section">
+<div class="cmd-heading">EXPERIENCE</div>
+<div class="exp-block">
+  <div class="exp-date">Oct 2022 &mdash; Present</div>
+  <div class="exp-role">Data Science Manager</div>
+  <div class="exp-org">Apple Inc &middot; New York, NY</div>
+  <div class="exp-desc">I run the experimentation science team for Apple Ads. We design experiments, build metrics, and figure out whether changes to the ad marketplace actually improve things or just look like they do.</div>
+  <div style="margin-top:0.3rem;"><span class="cmd-tag">causal-inference</span><span class="cmd-tag">a/b-testing</span><span class="cmd-tag">marketplace-experiments</span></div>
+</div>
+<div class="exp-block">
+  <div class="exp-date">Feb 2020 &mdash; Sep 2022</div>
+  <div class="exp-role">(Senior) Data Scientist</div>
+  <div class="exp-org">Twitter Inc &middot; San Francisco, CA</div>
+  <div class="exp-desc">Clustered churning users with dynamic time warping. Built non-inferiority tests and variance reduction methods for the experimentation platform. Gave a talk on retention modeling at WSDM 2022.</div>
+  <div style="margin-top:0.3rem;"><span class="cmd-tag">retention</span><span class="cmd-tag">time-series</span><span class="cmd-tag">variance-reduction</span></div>
+</div>
+<div class="exp-block">
+  <div class="exp-date">Jun 2018 &mdash; Sep 2018</div>
+  <div class="exp-role">Data Science Intern</div>
+  <div class="exp-org">Twitter Inc &middot; San Francisco, CA</div>
+  <div class="exp-desc">Product and Data Science team.</div>
+</div>
+<div class="exp-block">
+  <div class="exp-date">Aug 2015 &mdash; Dec 2019</div>
+  <div class="exp-role">Research Assistant &amp; Teaching Fellow</div>
+  <div class="exp-org">CeCERA, University of North Texas &middot; Denton, TX</div>
+  <div class="exp-desc">PhD research on location-allocation algorithms for bio-emergency response and disease modeling under <a href="https://cas.gsu.edu/profile/armin-mikler/" target="_blank" class="cmd-link">Dr. Armin Mikler</a> and <a href="https://cas.gsu.edu/profile/chetan-tiwari/" target="_blank" class="cmd-link">Dr. Chetan Tiwari</a>.</div>
+  <div style="margin-top:0.3rem;"><span class="cmd-tag">location-allocation</span><span class="cmd-tag">disease-modeling</span><span class="cmd-tag">gis</span></div>
+</div>
+<div class="exp-block">
+  <div class="exp-date">Jun 2014 &mdash; Jul 2015</div>
+  <div class="exp-role">(Senior) Software Engineer</div>
+  <div class="exp-org">Info Edge India Ltd &middot; Noida, India</div>
+  <div class="exp-desc">Backend systems.</div>
+</div>
+</div>`);
+    }
+  },
+
+  education: {
+    desc: 'Education',
+    fn() {
+      appendOutput(`
+<div class="cmd-section">
+<div class="cmd-heading">EDUCATION</div>
+<div class="exp-block">
+  <div class="exp-date">2015 &mdash; 2019</div>
+  <div class="exp-role">PhD, Computer Science</div>
+  <div class="exp-org">University of North Texas &middot; Denton, TX</div>
+  <div class="exp-desc">GPA: 4.0/4.0. Research in location-allocation, disease modeling, and computational epidemiology at CeCERA.</div>
+</div>
+<div class="exp-block">
+  <div class="exp-date">2010 &mdash; 2014</div>
+  <div class="exp-role">B.Tech, Information Technology</div>
+  <div class="exp-org">Malaviya National Institute of Technology &middot; Jaipur, India</div>
+  <div class="exp-desc">GPA: 8.41/10.</div>
+</div>
+</div>`);
+    }
+  },
+
+  skills: {
+    desc: 'Tech stack',
+    fn() {
+      appendOutput(`
+<div class="cmd-section">
+<div class="cmd-heading">TECH STACK</div>
+<div class="cmd-table-row"><span class="cmd-table-label">Languages</span><span class="cmd-table-value">Python, SQL, Java, C++</span></div>
+<div class="cmd-table-row"><span class="cmd-table-label">Data</span><span class="cmd-table-value">PySpark, BigQuery, Presto, PostgreSQL, Redis</span></div>
+<div class="cmd-table-row"><span class="cmd-table-label">Tools</span><span class="cmd-table-value">Plotly-Dash, QGIS, Vue.js</span></div>
+<div class="cmd-table-row"><span class="cmd-table-label">Methods</span><span class="cmd-table-value">Causal inference, A/B testing, time series, clustering, simulation, location-allocation</span></div>
+</div>`);
+    }
+  },
+
+  achievements: {
+    desc: 'Awards and talks',
+    fn() {
+      appendOutput(`
+<div class="cmd-section">
+<div class="cmd-heading">ACHIEVEMENTS</div>
+<div class="cmd-body">&bull; Won the Ads Platform Hackathon at Apple (2024)</div>
+<div class="cmd-body">&bull; Talk on DTW-based customer retention modeling at WSDM 2022</div>
+<div class="cmd-body">&bull; Won People's Choice Award at Twitter Hackweek 2020</div>
+<div class="cmd-body">&bull; Employee of the Month for Redis deployment at Info Edge India</div>
+</div>`);
+    }
+  },
+
+  contact: {
+    desc: 'Get in touch',
+    fn() {
+      appendOutput(`
+<div class="cmd-section">
+<div class="cmd-heading">CONTACT</div>
+<div class="cmd-table-row"><span class="cmd-table-label">Email</span><span class="cmd-table-value"><a href="mailto:harsha.gwalani@gmail.com" class="cmd-link">harsha.gwalani@gmail.com</a></span></div>
+<div class="cmd-table-row"><span class="cmd-table-label">LinkedIn</span><span class="cmd-table-value"><a href="https://www.linkedin.com/in/harsha-helsing-7b348847/" target="_blank" class="cmd-link">linkedin.com/in/harsha-helsing-7b348847</a></span></div>
+<div class="cmd-table-row"><span class="cmd-table-label">Scholar</span><span class="cmd-table-value"><a href="https://scholar.google.com/citations?user=Pdd1FaEAAAAJ" target="_blank" class="cmd-link">scholar.google.com/citations?user=Pdd1FaEAAAAJ</a></span></div>
+<div class="cmd-table-row"><span class="cmd-table-label">GitHub</span><span class="cmd-table-value"><a href="https://github.com/harsha2412" target="_blank" class="cmd-link">github.com/harsha2412</a></span></div>
+<div class="cmd-body" style="margin-top:1rem;">Feel free to reach out about research, data science, or interesting problems in causal inference.</div>
+</div>`);
+    }
+  },
+
+  whoami: {
+    desc: 'Quick summary',
+    fn() {
+      appendOutput('<div class="cmd-body">Harsha Gwalani Helsing. Data Science Manager at Apple. PhD in CS (UNT). Causal inference, experimentation, computational epi.</div>');
+    }
+  },
+
+  clear: {
+    desc: 'Clear terminal',
+    fn() { output.innerHTML = ''; }
+  },
+
+  // Easter eggs
+  sudo: {
+    desc: '',
+    fn() { appendOutput('<div class="cmd-error">Nice try. No root access here.</div>'); }
+  },
+  cat: {
+    desc: '',
+    fn() {
+      appendOutput(`<div class="cmd-body" style="white-space:pre;line-height:1.3;font-size:0.78rem;">
+  /\\_/\\
+ ( o.o )
+  > ^ <
+ /|   |\\
+(_|   |_)
+</div>`);
+    }
+  },
+  ping: {
+    desc: '',
+    fn() { appendOutput('<div class="cmd-body">pong. (latency: 0ms &mdash; everything here is client-side)</div>'); }
+  },
+  'man': {
+    desc: '',
+    fn(args) {
+      if (args && args[0] === 'harsha') { commands.about.fn(); }
+      else { appendOutput('<div class="cmd-dim">No manual entry for ' + escapeHtml((args||[]).join(' ') || '???') + '. Try: man harsha</div>'); }
+    }
+  },
+  'rm': {
+    desc: '',
+    fn() { appendOutput('<div class="cmd-error">This portfolio is read-only. Nice try though.</div>'); }
+  },
+  fortune: {
+    desc: '',
+    fn() {
+      const fortunes = [
+        'Correlation is not causation, but it sure is a hint. &mdash; Edward Tufte',
+        'All models are wrong, but some are useful. &mdash; George Box',
+        'The best thing about being a statistician is that you get to play in everyone\'s backyard. &mdash; John Tukey',
+        'Far better an approximate answer to the right question than an exact answer to the wrong question. &mdash; John Tukey',
+        'If you torture the data long enough, it will confess to anything. &mdash; Ronald Coase',
+      ];
+      appendOutput(`<div class="cmd-body" style="color:var(--term-purple);font-style:italic;">${fortunes[Math.floor(Math.random()*fortunes.length)]}</div>`);
+    }
+  }
+};
+
+function executeCommand(raw) {
+  const trimmed = raw.trim();
+  if (!trimmed) return;
+
+  history.unshift(trimmed);
+  historyIdx = -1;
+
+  appendOutput(`<div class="cmd-echo"><span class="prompt">harsha@portfolio:~$</span> ${escapeHtml(trimmed)}</div>`);
+
+  const parts = trimmed.toLowerCase().split(/\s+/);
+  const cmd = parts[0];
+  const args = parts.slice(1);
+
+  if (commands[cmd]) {
+    commands[cmd].fn(args);
+  } else {
+    appendOutput(`<div class="cmd-error">Command not found: ${escapeHtml(cmd)}. Type 'help' for available commands.</div>`);
+  }
+
+  scrollToBottom();
+}
+
+// Input handling
+input.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    executeCommand(input.value);
+    input.value = '';
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    if (historyIdx < history.length - 1) {
+      historyIdx++;
+      input.value = history[historyIdx];
+    }
+  } else if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    if (historyIdx > 0) {
+      historyIdx--;
+      input.value = history[historyIdx];
+    } else {
+      historyIdx = -1;
+      input.value = '';
+    }
+  } else if (e.key === 'Tab') {
+    e.preventDefault();
+    const partial = input.value.trim().toLowerCase();
+    if (!partial) return;
+    const visible = Object.keys(commands).filter(c => commands[c].desc && c.startsWith(partial));
+    if (visible.length === 1) {
+      input.value = visible[0];
+    } else if (visible.length > 1) {
+      appendOutput(`<div class="cmd-dim">${visible.join('  ')}</div>`);
+      scrollToBottom();
+    }
+  } else if (e.key === 'l' && e.ctrlKey) {
+    e.preventDefault();
+    commands.clear.fn();
+  }
+});
+
+// Typing animation then execute
+function typeAndExecute(cmd) {
+  input.value = '';
+  input.focus();
+  let i = 0;
+  const interval = setInterval(() => {
+    input.value += cmd[i];
+    i++;
+    if (i >= cmd.length) {
+      clearInterval(interval);
+      setTimeout(() => {
+        executeCommand(cmd);
+        input.value = '';
+      }, 150);
+    }
+  }, 50);
+}
+
+// Mobile command palette
+document.querySelectorAll('.cmd-pill').forEach(btn => {
+  btn.addEventListener('click', () => {
+    typeAndExecute(btn.dataset.cmd);
   });
+});
+
+// Clickable command words in output
+output.addEventListener('click', (e) => {
+  const clickable = e.target.closest('.cmd-clickable');
+  if (clickable && clickable.dataset.cmd) {
+    typeAndExecute(clickable.dataset.cmd);
+  }
+});
+
+// Keep focus on input
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('a') && !e.target.closest('.cmd-pill') && !e.target.closest('.cmd-clickable')) {
+    input.focus();
+  }
+});
+
+// Initialize
+showSplash();
+input.focus();
 </script>
 </body>
 </html>
