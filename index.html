@@ -346,7 +346,7 @@ function showSplash() {
 </svg>
 </div>
 <div class="cmd-body" style="color:var(--tg);margin-bottom:0.3rem;">Welcome.</div>
-<div class="cmd-body">I am <span style="color:var(--term-bright);">Harsha Gwalani Helsing</span>, Data science manager, experimentation person in my day job as well as weekend job through gardening and art.</div>
+<div class="cmd-body"><span style="color:var(--term-bright);">Harsha Gwalani Helsing</span> &mdash; <span style="color:var(--term-bright)">Data Science Manager at Apple</span>, leading experimentation science for Apple Ads, with roots in computational epidemiology and a passion for causal inference.</div>
 <div class="cmd-body" style="margin-top:0.8rem;">Type <span style="color:var(--tg)">help</span> to see what's here, or jump to a section:</div>
 <div class="cmd-body"><span class="cmd-clickable" data-cmd="about">about</span> &middot; <span class="cmd-clickable" data-cmd="research">research</span> &middot; <span class="cmd-clickable" data-cmd="publications">publications</span> &middot; <span class="cmd-clickable" data-cmd="experience">experience</span> &middot; <span class="cmd-clickable" data-cmd="skills">skills</span> &middot; <span class="cmd-clickable" data-cmd="contact">contact</span></div>
 `;
@@ -402,9 +402,9 @@ const commands = {
       appendOutput(`
 <div class="cmd-section">
 <div class="cmd-heading">ABOUT</div>
-<div class="cmd-body">I manage the experimentation science team for Apple Ads. In practice, this means my team figures out whether new algorithms and features actually work &mdash; designing experiments, defining metrics, and doing the statistical analysis to distinguish real effects from noise.</div>
-<div class="cmd-body">Before Apple, I was a data scientist at Twitter, where I built models to understand why users leave (and what, if anything, can be done about it), came up with future hypotheses to try and worked on the A/B testing infrastructure for those features.</div>
-<div class="cmd-body">My PhD is in computer science from the University of North Texas. My PhD research primarily focused on location allocation models in the context of bioemergencies and epidemics. I worked with <a href="https://cas.gsu.edu/profile/armin-mikler/" target="_blank" class="cmd-link">Dr. Armin Mikler</a> and <a href="https://cas.gsu.edu/profile/chetan-tiwari/" target="_blank" class="cmd-link">Dr. Chetan Tiwari</a> at CeCERA.</div>
+<div class="cmd-body">Data Science Manager at <span style="color:var(--term-bright)">Apple</span>, leading the experimentation science team for Apple Ads. The team develops experiment designs, metrics, and statistical analyses to measure the impact of new algorithms and features on business metrics. Professional work centers on <span style="color:var(--term-bright)">online experimentation and causal inference</span> &mdash; establishing causality through both randomized experiments and observational data.</div>
+<div class="cmd-body">Interest in applying quantitative methods to societal challenges was shaped early &mdash; growing up in India with a father who is a practicing Physician, introduced to medicine and biology early on and always interested in Math. This led to a computer science research lab focused on bioinformatics and public health. Under <a href="https://cas.gsu.edu/profile/armin-mikler/" target="_blank" class="cmd-link">Dr. Armin Mikler</a> and <a href="https://cas.gsu.edu/profile/chetan-tiwari/" target="_blank" class="cmd-link">Dr. Chetan Tiwari</a> at the University of North Texas, doctoral research focused on location-allocation algorithms for emergency response planning, disease modeling, and computational epidemiology.</div>
+<div class="cmd-body">Before Apple, Senior Data Scientist at <span style="color:var(--term-bright)">Twitter</span>, working on experimentation, customer retention modeling, and advanced statistical methods for A/B testing.</div>
 </div>`);
     }
   },
@@ -416,17 +416,17 @@ const commands = {
 <div class="cmd-section">
 <div class="cmd-heading">RESEARCH BACKGROUND</div>
 <div class="cmd-subheading">&gt; Experimentation &amp; Causal Inference</div>
-<div class="cmd-body cmd-indent">I design randomized experiments and analyze observational data to identify causal effects in ad marketplaces and product features. I spend a lot of time thinking about marketplace interference, variance reduction techniques, and non-inferiority testing frameworks.</div>
-<div class="cmd-subheading">&gt; Location-Allocation Algorithms</div>
-<div class="cmd-body cmd-indent">My dissertation developed heuristics and metaheuristics for the p-median problem, focused on how to distribute demand across service facilities in a balanced way during emergency response scenarios.</div>
-<div class="cmd-subheading">&gt; Customer Retention Modeling</div>
-<div class="cmd-body cmd-indent">I have used dynamic time warping and clustering to characterize how users churn and what their behavior looks like before they leave. This work combines time series analysis with behavioral prediction to inform retention strategies.</div>
-<div class="cmd-subheading">&gt; Computational Epidemiology</div>
-<div class="cmd-body cmd-indent">I built agent-based simulations of disease outbreaks that incorporate temperature-dependent mosquito ecology and transit networks to evaluate how interventions might slow transmission.</div>
-<div class="cmd-subheading">&gt; Cluster Analysis (Materials Science)</div>
-<div class="cmd-body cmd-indent">I worked on compositional analysis of metallic alloy systems, developing sampling algorithms to discover atomic clusters in large combinatorial search spaces.</div>
+<div class="cmd-body cmd-indent">Designing and analyzing randomized experiments and observational studies to establish causal effects of algorithms and features on business and health outcomes.</div>
+<div class="cmd-subheading">&gt; Location Allocation</div>
+<div class="cmd-body cmd-indent">Developing novel heuristic and metaheuristic algorithms for the p-median problem and balanced demand distribution in emergency response planning.</div>
+<div class="cmd-subheading">&gt; Customer Retention Models</div>
+<div class="cmd-body cmd-indent">Using dynamic time warping, clustering, and time series analysis to understand user churn patterns and build models that improve retention strategies.</div>
+<div class="cmd-subheading">&gt; Cluster Analysis</div>
+<div class="cmd-body cmd-indent">Compositional analysis of metallic systems, sampling algorithms, and discovery of atomic clusters &mdash; bridging computational methods with materials science.</div>
+<div class="cmd-subheading">&gt; Disease Modeling</div>
+<div class="cmd-body cmd-indent">Simulating vector-borne disease outbreaks incorporating temperature-dependent mosquito ecology and transit networks to evaluate intervention strategies.</div>
 <div class="cmd-subheading">&gt; Statistical Methods</div>
-<div class="cmd-body cmd-indent">I work on advanced statistical methods for A/B testing, significance testing for AUC at scale, and frameworks for measuring budget cannibalization in marketplace experiments.</div>
+<div class="cmd-body cmd-indent">Advanced statistical methods for A/B testing, non-inferiority testing, significance testing for AUC at scale, and frameworks for budget cannibalization in marketplace experiments.</div>
 </div>`);
     }
   },
@@ -475,14 +475,14 @@ const commands = {
   <div class="exp-date">Oct 2022 &mdash; Present</div>
   <div class="exp-role">Data Science Manager</div>
   <div class="exp-org">Apple Inc &middot; New York, NY</div>
-  <div class="exp-desc">I run the experimentation science team for Apple Ads. We design experiments, build metrics, and figure out whether changes to the ad marketplace actually improve things or just look like they do.</div>
+  <div class="exp-desc">Leading the experimentation science team for Apple Ads. Developing experiment designs, metrics, and statistical analyses. Building frameworks for marketplace experiments and budget cannibalization analysis.</div>
   <div style="margin-top:0.3rem;"><span class="cmd-tag">causal-inference</span><span class="cmd-tag">a/b-testing</span><span class="cmd-tag">marketplace-experiments</span></div>
 </div>
 <div class="exp-block">
   <div class="exp-date">Feb 2020 &mdash; Sep 2022</div>
   <div class="exp-role">(Senior) Data Scientist</div>
   <div class="exp-org">Twitter Inc &middot; San Francisco, CA</div>
-  <div class="exp-desc">Clustered churning users with dynamic time warping. Built non-inferiority tests and variance reduction methods for the experimentation platform. Gave a talk on retention modeling at WSDM 2022.</div>
+  <div class="exp-desc">Applied dynamic time warping to cluster churning users. Implemented non-inferiority tests and variance reduction for robust experimentation. Presented retention modeling at WSDM 2022.</div>
   <div style="margin-top:0.3rem;"><span class="cmd-tag">retention</span><span class="cmd-tag">time-series</span><span class="cmd-tag">variance-reduction</span></div>
 </div>
 <div class="exp-block">
@@ -495,14 +495,14 @@ const commands = {
   <div class="exp-date">Aug 2015 &mdash; Dec 2019</div>
   <div class="exp-role">Research Assistant &amp; Teaching Fellow</div>
   <div class="exp-org">CeCERA, University of North Texas &middot; Denton, TX</div>
-  <div class="exp-desc">PhD research on location-allocation algorithms for bio-emergency response and disease modeling under <a href="https://cas.gsu.edu/profile/armin-mikler/" target="_blank" class="cmd-link">Dr. Armin Mikler</a> and <a href="https://cas.gsu.edu/profile/chetan-tiwari/" target="_blank" class="cmd-link">Dr. Chetan Tiwari</a>.</div>
+  <div class="exp-desc">Doctoral research on location-allocation algorithms for bio-emergency response, disease modeling, and computational epidemiology under <a href="https://cas.gsu.edu/profile/armin-mikler/" target="_blank" class="cmd-link">Dr. Armin Mikler</a> and <a href="https://cas.gsu.edu/profile/chetan-tiwari/" target="_blank" class="cmd-link">Dr. Chetan Tiwari</a>.</div>
   <div style="margin-top:0.3rem;"><span class="cmd-tag">location-allocation</span><span class="cmd-tag">disease-modeling</span><span class="cmd-tag">gis</span></div>
 </div>
 <div class="exp-block">
   <div class="exp-date">Jun 2014 &mdash; Jul 2015</div>
   <div class="exp-role">(Senior) Software Engineer</div>
   <div class="exp-org">Info Edge India Ltd &middot; Noida, India</div>
-  <div class="exp-desc">Backend systems.</div>
+  <div class="exp-desc">Backend systems engineering. Employee of the month for Redis project deployment.</div>
 </div>
 </div>`);
     }
