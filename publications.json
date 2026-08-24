@@ -1,117 +1,144 @@
 {
-  "last_updated": "2026-02-22 00:00 UTC",
-  "author": "Harsha Gwalani",
-  "total_citations": 35,
-  "h_index": 4,
-  "i10_index": 1,
+  "last_updated": "2026-08-24 07:14 UTC",
+  "author": "Harsha Gwalani Helsing",
+  "total_citations": 115,
+  "h_index": 0,
+  "i10_index": 0,
   "publications": [
     {
-      "title": "A Distributed Algorithm for Solving Large-Scale p-Median Problems Using Expectation Maximization",
-      "authors": "Harsha Gwalani, Armin R Mikler, Chetan Tiwari",
-      "year": "2024",
-      "venue": "PeerJ Computer Science",
-      "citations": 0,
-      "url": "",
-      "scholar_url": ""
-    },
-    {
-      "title": "Statistical Significance Testing for AUC for Large Scale Models",
-      "authors": "Harsha Gwalani",
-      "year": "2024",
-      "venue": "Submitted at CODE 2024",
-      "citations": 0,
-      "url": "",
-      "scholar_url": ""
-    },
-    {
-      "title": "Measuring the Impact of Suspending Umrah on the COVID-19 Pandemic",
-      "authors": "Sultanah M. Alshammari, Waleed K. Almutiry, Harsha Gwalani, Saeed M. Algarni, Kawther Saeedi",
-      "year": "2024",
+      "title": "Measuring the impact of suspending Umrah, a global mass gathering in Saudi Arabia on the COVID-19 pandemic: SM Alshammari et al.",
+      "authors": "Sultanah M Alshammari and Waleed K Almutiry and Harsha Gwalani and Saeed M Algarni and Kawther Saeedi",
+      "year": 2024,
       "venue": "Computational and Mathematical Organization Theory",
-      "citations": 0,
-      "url": "",
-      "scholar_url": ""
+      "citations": 20,
+      "url": "https://link.springer.com/article/10.1007/s10588-021-09343-y",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Pdd1FaEAAAAJ&citation_for_view=Pdd1FaEAAAAJ:W7OEmFMy1HYC"
     },
     {
-      "title": "Creating Contiguous Service Areas for Known Facilities with Constrained Demand Distribution",
-      "authors": "Harsha Gwalani, Armin R Mikler, Chetan Tiwari",
-      "year": "2022",
+      "title": "A distributed algorithm for solving large-scale p-median problems using expectation maximization",
+      "authors": "Harsha Gwalani and Joseph Helsing and Sultanah M Alshammari and Chetan Tiwari and Armin R Mikler",
+      "year": 2024,
+      "venue": "PeerJ Computer Science",
+      "citations": 4,
+      "url": "https://peerj.com/articles/cs-2446/",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Pdd1FaEAAAAJ&citation_for_view=Pdd1FaEAAAAJ:WF5omc3nYNoC"
+    },
+    {
+      "title": "Creating contiguous service areas around points of dispensing for resource distribution during bio-emergencies",
+      "authors": "Harsha Gwalani and Chetan Tiwari and Marty O’Neill II and Armin R Mikler",
+      "year": 2023,
       "venue": "GeoInformatica",
-      "citations": 0,
-      "url": "",
-      "scholar_url": ""
+      "citations": 4,
+      "url": "https://link.springer.com/article/10.1007/s10707-022-00462-5",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Pdd1FaEAAAAJ&citation_for_view=Pdd1FaEAAAAJ:eQOLeE2rZwMC"
     },
     {
-      "title": "Evaluation of Heuristics for the P-Median Problem: Scale and Spatial Demand Distribution",
-      "authors": "Harsha Gwalani, Chetan Tiwari, Armin R Mikler",
-      "year": "2021",
-      "venue": "Computers, Environment and Urban Systems",
-      "citations": 0,
-      "url": "",
-      "scholar_url": ""
+      "title": "Evaluation of heuristics for the p-median problem: Scale and spatial demand distribution",
+      "authors": "Harsha Gwalani and Chetan Tiwari and Armin R Mikler",
+      "year": 2021,
+      "venue": "Computers, environment and urban systems",
+      "citations": 47,
+      "url": "https://www.sciencedirect.com/science/article/pii/S0198971521000636",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Pdd1FaEAAAAJ&citation_for_view=Pdd1FaEAAAAJ:Y0pCki6q_DkC"
     },
     {
-      "title": "Compositional Analysis for Metallic Systems: Sampling Methods",
-      "authors": "Harsha Gwalani, Martin O'Neill II, Armin R Mikler, Talukder Alam, Rajarshi Banerjee",
-      "year": "2019",
-      "venue": "Industrial Conference on Data Mining (ICDM)",
-      "citations": 0,
-      "url": "",
-      "scholar_url": ""
+      "title": "Disease spread simulation to assess the risk of epidemics during the global mass gathering of Hajj pilgrimage",
+      "authors": "Sultanah M Alshammari and Harsha Gwalani and Joseph E Helsing and Armin R Mikler",
+      "year": 2019,
+      "venue": "2019 winter simulation conference (wsc)",
+      "citations": 14,
+      "url": "https://ieeexplore.ieee.org/abstract/document/9004669/",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Pdd1FaEAAAAJ&citation_for_view=Pdd1FaEAAAAJ:zYLM7Y9cAGgC"
     },
     {
-      "title": "Simulation of Solute Clusters in Metallic Systems",
-      "authors": "Harsha Gwalani, Bharat Gwalani, et al.",
-      "year": "2019",
+      "title": "Simulation of solute clusters in metallic systems",
+      "authors": "Harsha Gwalani and Bharat Gwalani and Marty O’Neill and Armin R Mikler and Rajarshi Banerjee",
+      "year": 2019,
       "venue": "Modelling and Simulation in Materials Science and Engineering",
-      "citations": 0,
-      "url": "",
-      "scholar_url": ""
+      "citations": 3,
+      "url": "https://iopscience.iop.org/article/10.1088/1361-651X/ab4b3d/meta",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Pdd1FaEAAAAJ&citation_for_view=Pdd1FaEAAAAJ:qjMakFHDy7sC"
     },
     {
-      "title": "Validation and Evaluation of Emergency Response Plans through Agent-Based Modeling and Simulation",
-      "authors": "Joseph Helsing, Harsha Gwalani, et al.",
-      "year": "2019",
-      "venue": "Winter Simulation Conference (WSC)",
-      "citations": 0,
+      "title": "Validation and evaluation of emergency response plans through agent-based modeling and simulation",
+      "authors": "Joseph E Helsing and Harsha Gwalani and Armin R Mikler and Sultanah M Alshammari",
+      "year": 2019,
+      "venue": "2019 Winter Simulation Conference (WSC)",
+      "citations": 1,
       "url": "",
-      "scholar_url": ""
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Pdd1FaEAAAAJ&citation_for_view=Pdd1FaEAAAAJ:IjCSPb-OGe4C"
     },
     {
-      "title": "Disease Spread Simulation to Assess the Risk of Epidemics During the Global Mass Gathering of Hajj Pilgrimage",
-      "authors": "Sultanah Alshammari, Harsha Gwalani, et al.",
-      "year": "2019",
-      "venue": "Winter Simulation Conference (WSC)",
-      "citations": 0,
+      "title": "Spatial partitioning algorithms for solving location-allocation problems",
+      "authors": "Harsha Gwalani",
+      "year": 2019,
+      "venue": "",
+      "citations": 1,
       "url": "",
-      "scholar_url": ""
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Pdd1FaEAAAAJ&citation_for_view=Pdd1FaEAAAAJ:YsMSGLbcyi4C"
     },
     {
-      "title": "Modeling the 2013 Zika Outbreak in French Polynesia: Intervention Strategies",
-      "authors": "Harsha Gwalani, Faris Hawamdeh, Armin R Mikler, Katherine Xiong",
-      "year": "2018",
+      "title": "Compositional Analysis for Metallic Systems: Sampling Methods.",
+      "authors": "Harsha Gwalani and Martin O Neill II and Armin R Mikler and Talukder Alam and Rajarshi Banerjee",
+      "year": 2019,
+      "venue": "ICDM",
+      "citations": 0,
+      "url": "",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Pdd1FaEAAAAJ&citation_for_view=Pdd1FaEAAAAJ:Tyk-4Ss8FVUC"
+    },
+    {
+      "title": "Modeling the 2013 zika outbreak in French Polynesia: Intervention strategies",
+      "authors": "Harsha Gwalani and Faris Hawamdeh and Armin R Mikler and Katherine Xiong",
+      "year": 2018,
       "venue": "Applied System Innovation",
-      "citations": 0,
-      "url": "",
-      "scholar_url": ""
+      "citations": 3,
+      "url": "https://www.mdpi.com/2571-5577/1/3/31",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Pdd1FaEAAAAJ&citation_for_view=Pdd1FaEAAAAJ:2osOgNQ5qMEC"
     },
     {
-      "title": "Collection and Integration of Multi-spatial and Multi-type Data for Vulnerability Analysis in Emergency Response Plans",
-      "authors": "Harsha Gwalani, Armin R Mikler",
-      "year": "2016",
-      "venue": "Advances and New Trends in Environmental Informatics (Springer)",
-      "citations": 0,
-      "url": "",
-      "scholar_url": ""
+      "title": "Collection and integration of multi-spatial and multi-type data for vulnerability analysis in emergency response plans",
+      "authors": "Harsha Gwalani and Armin R Mikler and Suhasini Ramisetty-Mikler and Martin O’Neill",
+      "year": 2016,
+      "venue": "",
+      "citations": 7,
+      "url": "https://link.springer.com/chapter/10.1007/978-3-319-44711-7_8",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Pdd1FaEAAAAJ&citation_for_view=Pdd1FaEAAAAJ:u-x6o8ySG0sC"
     },
     {
-      "title": "Classification of Brain Tumors using Genetic Algorithms as a Feature Selection Method (GAFS)",
-      "authors": "Harsha Gwalani, Namita Mittal, Ankit Vidyarthi",
-      "year": "2016",
-      "venue": "ICIA 2016, Pondicherry, India",
-      "citations": 0,
+      "title": "Classification of brain tumours using genetic algorithms as a feature selection method (GAFS)",
+      "authors": "Harsha Gwalani and Namita Mittal and Ankit Vidyarthi",
+      "year": 2016,
+      "venue": "",
+      "citations": 7,
+      "url": "https://dl.acm.org/doi/abs/10.1145/2980258.2980318",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Pdd1FaEAAAAJ&citation_for_view=Pdd1FaEAAAAJ:9yKSN-GCB0IC"
+    },
+    {
+      "title": "Advances and New Trends in Environmental Informatics: Stability, Continuity, Innovation",
+      "authors": "Volker Wohlgemuth and Frank Fuchs-Kittowski and Jochen Wittmann",
+      "year": 2016,
+      "venue": "",
+      "citations": 2,
       "url": "",
-      "scholar_url": ""
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Pdd1FaEAAAAJ&citation_for_view=Pdd1FaEAAAAJ:d1gkVwhDpl0C"
+    },
+    {
+      "title": "An interactive model for vector borne diseases: A simulation for Zika in French polynesia",
+      "authors": "Harsha Gwalani and Sultanah M Alshammari and Armin R Mikler",
+      "year": 2016,
+      "venue": "",
+      "citations": 1,
+      "url": "",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Pdd1FaEAAAAJ&citation_for_view=Pdd1FaEAAAAJ:UeHWp8X0CEIC"
+    },
+    {
+      "title": "ACLIME: Automatic cluster identification and Merging",
+      "authors": "Ankit Vidyarthi and Harsha Gwalani and Namita Mittal",
+      "year": 2014,
+      "venue": "2014 5th International Conference-Confluence The Next Generation Information Technology Summit (Confluence)",
+      "citations": 1,
+      "url": "https://ieeexplore.ieee.org/abstract/document/6949040/",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Pdd1FaEAAAAJ&citation_for_view=Pdd1FaEAAAAJ:u5HHmVD_uO8C"
     }
   ]
 }
